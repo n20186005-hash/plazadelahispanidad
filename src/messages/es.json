@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Plaza de la Hispanidad or Spain | Plaza de España",
-    "description": "Explora la Plaza de la Hispanidad or Spain en Santo Domingo, República Dominicana. Un hermoso parque urbano con una importante significancia histórica y cultural."
+    "description": "Explora la Plaza de la Hispanidad en Santo Domingo, República Dominicana. Área central del Patrimonio de la Humanidad y el principal destino para cenar al aire libre."
   },
   "header": {
     "home": "Inicio",
@@ -11,33 +11,29 @@
     "backToHome": "Volver al Inicio"
   },
   "hero": {
-    "title": "Plaza de la Hispanidad or Spain",
-    "subtitle": "Plaza de España · Santo Domingo, República Dominicana",
+    "title": "Plaza de la Hispanidad",
+    "subtitle": "República Dominicana · Hito Histórico Central de la Zona Colonial de Santo Domingo",
     "rating": "4.7",
-    "reviewCount": "13,708",
-    "hours": "Parque",
+    "reviewCount": "13,710",
+    "hours": "Plaza Pública Histórica",
     "openMaps": "Ver Ubicación"
   },
   "intro": {
-    "title": "Explora la Plaza de la Hispanidad or Spain",
-    "description": "La Plaza de la Hispanidad or Spain (también conocida como Plaza de España o de la Hispanidad) se encuentra en C. La Atarazana 2, Santo Domingo, República Dominicana. Es un hermoso parque urbano con una importante significancia histórica y cultural, y es un lugar de ocio favorito para los residentes locales y turistas. El parque se ha convertido en un importante espacio público en Santo Domingo con su hermoso ambiente y importante valor cultural.",
+    "title": "Explora la Plaza Histórica Más Antigua de las Américas",
+    "description": "La Plaza de la Hispanidad (también conocida como Plaza de España) se encuentra en la Zona Colonial, el núcleo histórico de Santo Domingo, República Dominicana. Como parte importante del asentamiento europeo más antiguo que se conserva en las Américas, la plaza está adyacente al río Ozama. No solo lleva la profunda historia de la Era de los Descubrimientos, sino que ahora es el centro cultural y espacio de ocio público más vibrante de Santo Domingo.",
     "visitGuide": {
-      "title": "Consejos de Visita",
+      "title": "Comodidades y Accesibilidad",
       "items": [
-        "El parque está abierto diariamente de 08:00 a 18:00",
-        "Se recomienda usar calzado cómodo para caminar",
-        "Lleva una cámara para capturar los hermosos paisajes del parque y la arquitectura histórica",
-        "Lleva suficiente agua y protector solar",
-        "Respetar la cultura local y los sitios históricos"
+        "♿ Accesible para Sillas de Ruedas: Altamente amigable para usuarios de sillas de ruedas y visitantes con cochecitos. El área general es plana y abierta, con instalaciones de accesibilidad completas.",
+        "🐾 Se Permiten Perros: Esta es un área abierta donde se permiten explícitamente mascotas, y los residentes locales y turistas a menudo traen a sus perros aquí para pasear y relajarse.",
+        "💡 Mejor Hora de Visita: Se recomienda llegar por la tarde (después de las 5:00 PM) para capturar la luz suave en los edificios antiguos y hacer una transición perfecta a las cenas al aire libre por la noche."
       ]
     },
     "alsoKnownAs": {
-      "title": "Destacados",
+      "title": "Atmósfera Cultural",
       "items": [
-        "Importante Significancia Histórica: La plaza tiene un importante valor histórico y cultural y es un lugar importante para comprender la historia dominicana.",
-        "Hermoso Ambiente: El parque tiene amplios espacios de ocio y hermosos paisajes, siendo un lugar ideal para relajarse.",
-        "Ubicación Conveniente: Ubicado en el centro de Santo Domingo con transporte conveniente.",
-        "Valor Cultural: Como Plaza de España, tiene una importante significancia cultural y valor simbólico."
+        "🎭 Centro de Arte y Vida Nocturna: Un importante centro de actividades culturales que alberga exposiciones de arte al aire libre, conciertos en vivo y otras celebraciones culturales durante todo el año.",
+        "🍽️ Mezcla de Historia y Gastronomía: Los cafés y restaurantes con terrazas a lo largo del borde de la plaza ofrecen una manera perfecta de experimentar el ambiente local."
       ]
     }
   },
@@ -58,22 +54,22 @@
     ]
   },
   "knowledge": {
-    "title": "Descubre el Encanto de la Plaza de la Hispanidad or Spain",
+    "title": "Historia y Lugares Emblemáticos",
     "sections": [
       {
         "id": "history",
-        "title": "Importancia Histórica",
-        "content": "La Plaza de la Hispanidad or Spain es un importante espacio público y hito cultural en Santo Domingo, con una significativa importancia histórica y cultural."
+        "title": "🏛️ Alcázar de Colón",
+        "content": "Ubicado en el lado este de la plaza, construido entre 1510 y 1514. Esta fue la residencia de Diego Colón, hijo de Cristóbal Colón y entonces gobernador. Es la residencia virreinal más antigua de las Américas, mostrando una mezcla de estilos arquitectónicos gótico y renacentista."
       },
       {
         "id": "nature",
-        "title": "Paisaje del Parque",
-        "content": "Cuenta con hermosos paisajes y amplios espacios de ocio, siendo un lugar excelente para experimentar la vida urbana de Santo Domingo."
+        "title": "🏰 Las Atarazanas",
+        "content": "Ubicado en el lado oeste de la plaza, este complejo de arcos de ladrillo y piedra fue la primera aduana, armería y astillero de las Américas en el siglo XVI, ahora transformado en un famoso distrito gastronómico y de ocio."
       },
       {
         "id": "experience",
-        "title": "Experiencia de Visita",
-        "content": "Pasear por la Plaza de la Hispanidad or Spain, sentir el ambiente cultural y los hermosos paisajes de la capital dominicana, es una experiencia inolvidable de parque urbano."
+        "title": "🎭 Centro Cultural Vibrante",
+        "content": "No es solo un sitio histórico estático, sino una vibrante sala de estar urbana moderna. Alberga diversas exposiciones de arte al aire libre, conciertos en vivo y otras celebraciones culturales durante todo el año."
       }
     ]
   },
@@ -82,7 +78,7 @@
     "officialName": "Nombre Oficial",
     "officialNameValue": "Plaza de la Hispanidad or Spain (Plaza de España)",
     "type": "Tipo de atracción",
-    "typeValue": "Parque",
+    "typeValue": "Plaza Pública Histórica / Plaza de la Ciudad",
     "country": "País",
     "countryValue": "República Dominicana",
     "city": "Ciudad",
@@ -97,26 +93,26 @@
   },
   "hours": {
     "title": "Horarios de Apertura",
-    "outdoor": "Horario del Parque",
-    "outdoorTime": "Diariamente 08:00–18:00",
-    "lighthouse": "Mejor Época para Visitar",
-    "summer": "Durante el día",
-    "summerTime": "Las visitas diurnas ofrecen la mejor experiencia",
-    "winter": "Hora Recomendada para Visitar",
-    "winterTime": "Mañana o temprano por la tarde",
-    "warning": "Notas Importantes",
-    "warningTime": "Se recomienda verificar la información más reciente antes de visitar",
-    "tip": "Las visitas diurnas ofrecen la mejor experiencia"
+    "outdoor": "Área de la Plaza",
+    "outdoorTime": "Abierto al público 24/7",
+    "lighthouse": "Museo Cercano (Alcázar de Colón)",
+    "summer": "Mejor Momento para Visitar",
+    "summerTime": "Alrededor de las 5:00 PM, para disfrutar del hermoso atardecer",
+    "winter": "Tour Nocturno",
+    "winterTime": "Increíblemente romántico después de la iluminación nocturna, ideal para cenar",
+    "warning": "Horario del Alcázar de Colón",
+    "warningTime": "Los lugares oficiales cercanos suelen estar abiertos de 08:00 a 18:00",
+    "tip": "Muy recomendado visitar por la tarde para disfrutar del atardecer y la vida nocturna"
   },
   "tickets": {
     "title": "Información Importante",
-    "outdoor": "Tarifa de Entrada",
-    "outdoorPrice": "Entrada gratuita (sujeto a confirmación en el lugar)",
-    "lighthouse": "Tarifa de Parqueo",
-    "adults": "Costo de Parqueo",
-    "adultsPrice": "Por favor, consulte la información oficial",
-    "students": "Otros Cargos",
-    "studentsPrice": "Por favor, consulte los anuncios oficiales",
+    "outdoor": "Información de Entradas",
+    "outdoorPrice": "Toda el área de la plaza es de acceso gratuito",
+    "lighthouse": "Atracciones Cercanas",
+    "adults": "Entrada al Alcázar de Colón",
+    "adultsPrice": "Requiere entrada por separado (Consulte el precio en el lugar)",
+    "students": "Gastos de Comida",
+    "studentsPrice": "Varía según el restaurante al aire libre",
     "card": "Guías e Indicaciones",
     "cardPrice": "Es posible que haya servicios locales disponibles en el lugar (se recomienda confirmar con anticipación). Indicaciones: 👉 [Ir a la Plaza de la Hispanidad or Spain]",
     "officialNotice": "Para obtener las últimas actualizaciones sobre horarios de apertura e información relacionada, consulte el",
@@ -126,17 +122,17 @@
   "transport": {
     "title": "Transporte",
     "airport": "Desde el Aeropuerto",
-    "airportDesc": "Está relativamente cerca del Aeropuerto de Santo Domingo. Se recomienda tomar un taxi o transporte público después de llegar a la ciudad.",
+    "airportDesc": "Desde el Aeropuerto Internacional Las Américas (SDQ): A unos 28 km de distancia. Se recomienda tomar un taxi regular o un servicio de transporte (como Uber), viajando hacia el oeste por la Autopista Las Américas y cruzando el puente del río Ozama. El viaje dura unos 30-40 minutos.",
     "selfDrive": "En Coche",
-    "selfDriveDesc": "Ubicado en el centro de Santo Domingo. Se recomienda usar navegación. Puede haber áreas de estacionamiento cercanas.",
+    "selfDriveDesc": "Dado que la Zona Colonial es un distrito histórico protegido con calles estrechas de un solo sentido y sin grandes estacionamientos públicos cercanos, se recomienda a los turistas que conducen estacionar en lotes de estacionamiento permitidos fuera de la zona y caminar hacia la plaza.",
     "bus": "Transporte Público",
-    "busDesc": "Puede tomar transporte público en Santo Domingo a áreas cercanas, pero preste atención al horario.",
+    "busDesc": "Tomar un Uber hasta el borde de la Zona Colonial y entrar caminando es la forma más común y segura de viajar localmente.",
     "intercity": "Tour a Pie",
-    "intercityDesc": "Hay senderos para caminatas en el parque, caminable a varias áreas.",
+    "intercityDesc": "Toda la Zona Colonial es muy amigable para los peatones. Puede caminar fácilmente desde la plaza hasta la Catedral y otros sitios históricos. La plaza también es altamente accesible para sillas de ruedas.",
     "cycling": "Otros Medios",
-    "cyclingDesc": "Se recomienda transporte público o manejar, transporte conveniente alrededor del parque.",
+    "cyclingDesc": "La plaza está pavimentada con adoquines tradicionales que datan de siglos atrás, pero en general es plana y abierta, adecuada para un paseo.",
     "tips": "Consejos de Viaje",
-    "tipsDesc": "La Plaza de la Hispanidad or Spain es un excelente lugar para experimentar la vida urbana de Santo Domingo. Se recomienda visitar durante el día con luz solar."
+    "tipsDesc": "Para obtener la mejor experiencia visual y cultural, se recomienda llegar por la tarde (después de las 5:00 PM), conectando perfectamente las vistas nocturnas iluminadas y las cenas al aire libre."
   },
   "gallery": {
     "title": "Fotos Impresionantes",
@@ -358,25 +354,25 @@
     "title": "Cronología Histórica",
     "items": [
       {
-        "year": "Período Inicial",
-        "title": "Período Inicial: Construcción de la Plaza",
-        "plaque": "Paisaje Urbano (Plaza)",
-        "description": "La construcción de la Plaza de la Hispanidad or Spain tenía como objetivo proporcionar un hermoso espacio público de ocio para los ciudadanos de Santo Domingo, y ha sido considerada durante mucho tiempo como un importante espacio público urbano por los residentes locales."
+        "year": "Principios del Siglo XVI",
+        "title": "Principios del Siglo XVI: Centro Político y Comercial",
+        "plaque": "Punto de partida del Imperio Español",
+        "description": "Con la finalización del Alcázar de Colón y las Atarazanas Reales, este lugar se convirtió en el centro comercial y político más importante del Imperio Español en las Américas."
       },
       {
-        "year": "Siglo XX",
-        "title": "Siglo XX: Mejora de Instalaciones",
-        "plaque": "Desarrollo Urbano (Construcción de la Plaza)",
-        "description": "Con el desarrollo de Santo Domingo, la plaza mejoró gradualmente los senderos para caminatas y las instalaciones de ocio, convirtiéndose en un lugar importante para el ocio y entretenimiento de los ciudadanos."
+        "year": "Finales del Siglo XX",
+        "title": "Finales del Siglo XX: Patrimonio de la Humanidad",
+        "plaque": "Reconocido por la UNESCO",
+        "description": "Como parte de la 'Ciudad Colonial de Santo Domingo', fue catalogada como Patrimonio de la Humanidad por la UNESCO."
       },
       {
         "year": "Siglo XXI",
-        "title": "Siglo XXI: Hito Urbano",
-        "plaque": "Identidad Urbana (Espacio Público)",
-        "description": "Al entrar en el siglo XXI, con su hermoso ambiente e importante valor cultural, ha atraído a más turistas y se ha convertido en un importante espacio público urbano en Santo Domingo."
+        "title": "Siglo XXI: Centro Cultural y de Ocio",
+        "plaque": "Modernización e Iluminación",
+        "description": "Después de mejoras en la modernización e iluminación, se ha convertido en la plaza de ocio, social y gastronómica más popular para los turistas en la República Dominicana."
       }
     ],
     "guideTitle": "Consejo de Guía para Visitantes",
-    "guideContent": "Al visitar, puede comenzar paseando desde la entrada principal en C. La Atarazana 2; luego camine alrededor de la plaza para disfrutar de los paisajes y elementos culturales; si tiene suficiente tiempo, puede descansar en las áreas de ocio y sentir la vida urbana local. Finalmente, explore el paisaje urbano alrededor de la plaza y sienta el encanto de la capital dominicana."
+    "guideContent": "Paseando desde las antiguas calles adoquinadas del siglo XVI hasta los restaurantes al aire libre de hoy, la Plaza de la Hispanidad combina perfectamente el peso de la historia con la vitalidad moderna. Te recomendamos llegar al atardecer para experimentar personalmente este diálogo a través de cinco siglos de tiempo y espacio."
   }
 }

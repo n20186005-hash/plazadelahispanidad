@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Plaza de la Hispanidad or Spain | Spain Square",
-    "description": "Explore Plaza de la Hispanidad or Spain in Santo Domingo, Dominican Republic. A beautiful urban park with significant historical and cultural importance."
+    "description": "Explore Plaza de la Hispanidad in Santo Domingo, Dominican Republic. A core area of the World Heritage site and a top destination for outdoor dining."
   },
   "header": {
     "home": "Home",
@@ -11,33 +11,29 @@
     "backToHome": "Back to Home"
   },
   "hero": {
-    "title": "Plaza de la Hispanidad or Spain",
-    "subtitle": "Spain Square · Santo Domingo, Dominican Republic",
+    "title": "Plaza de la Hispanidad",
+    "subtitle": "Dominican Republic · Core Historical Landmark of Santo Domingo's Colonial Zone",
     "rating": "4.7",
-    "reviewCount": "13,708",
-    "hours": "Park",
+    "reviewCount": "13,710",
+    "hours": "Historical Public Plaza",
     "openMaps": "View Location"
   },
   "intro": {
-    "title": "Explore Plaza de la Hispanidad or Spain",
-    "description": "Plaza de la Hispanidad or Spain (also known as Plaza de España o de la Hispanidad) is located at C. La Atarazana 2, Santo Domingo, Dominican Republic. It is a beautiful urban park with significant historical and cultural importance, and is a favorite leisure place for local residents and tourists. The park has become an important public space in Santo Domingo with its beautiful environment and important cultural value.",
+    "title": "Explore the Oldest Historical Square in the Americas",
+    "description": "Plaza de la Hispanidad (also known as Plaza de España) is located in the Zona Colonial, the historical core of Santo Domingo, Dominican Republic. As an important part of the oldest surviving European settlement in the Americas, the square is adjacent to the Ozama River. It not only carries the profound history of the Age of Discovery but is now also the most vibrant cultural hub and public leisure space in Santo Domingo.",
     "visitGuide": {
-      "title": "Visiting Tips",
+      "title": "Amenities & Accessibility",
       "items": [
-        "Park is open daily 08:00–18:00",
-        "Comfortable walking shoes are recommended",
-        "Bring a camera to capture the park's beautiful scenery and historical architecture",
-        "Carry enough water and sunscreen",
-        "Respect local culture and historical sites"
+        "♿ Wheelchair Accessible: Highly friendly to wheelchair users and visitors with strollers. The overall area is flat and open, with complete accessibility facilities.",
+        "🐾 Dogs Allowed: This is an open area where pets are explicitly allowed, and local residents and tourists often bring their dogs here for walks and relaxation.",
+        "💡 Best Visit Time: Recommended to arrive in the evening (after 5:00 PM) to capture the soft light on ancient buildings and seamlessly transition to nighttime outdoor dining."
       ]
     },
     "alsoKnownAs": {
-      "title": "Highlights",
+      "title": "Cultural Atmosphere",
       "items": [
-        "Significant Historical Importance: The square has important historical and cultural value and is an important place to understand Dominican history.",
-        "Beautiful Environment: The park has spacious leisure spaces and beautiful landscapes, making it an ideal place to relax.",
-        "Convenient Location: Located in the city center of Santo Domingo with convenient transportation.",
-        "Cultural Value: As Spain Square, it has important cultural significance and symbolic value."
+        "🎭 Arts & Nightlife Hub: A major cultural activity center hosting outdoor art shows, live concerts, and other cultural celebrations year-round.",
+        "🍽️ Blend of History & Gastronomy: Cafes and restaurants with terraces along the edge of the square offer a perfect way to experience the local vibe."
       ]
     }
   },
@@ -58,22 +54,22 @@
     ]
   },
   "knowledge": {
-    "title": "Discover the Charm of Plaza de la Hispanidad or Spain",
+    "title": "History & Landmarks",
     "sections": [
       {
         "id": "history",
-        "title": "Historical Significance",
-        "content": "Plaza de la Hispanidad or Spain is an important public space and cultural landmark in Santo Domingo, with significant historical and cultural importance."
+        "title": "🏛️ Alcázar de Colón",
+        "content": "Located on the east side of the square, built between 1510 and 1514. This was the residence of Diego Columbus, son of Christopher Columbus and then-governor. It is the oldest viceregal residence in the Americas, showcasing a blend of Gothic and Renaissance architectural styles."
       },
       {
         "id": "nature",
-        "title": "Park Landscape",
-        "content": "It features beautiful landscapes and spacious leisure spaces, making it an excellent place to experience Santo Domingo's urban life."
+        "title": "🏰 Las Atarazanas",
+        "content": "Located on the west side of the square, this complex of brick and stone arches was the earliest customs house, armory, and shipyard in the Americas in the 16th century, now transformed into a famous dining and leisure district."
       },
       {
         "id": "experience",
-        "title": "Visiting Experience",
-        "content": "Strolling through Plaza de la Hispanidad or Spain, feeling the cultural atmosphere and beautiful scenery of the Dominican capital, is an unforgettable urban park experience."
+        "title": "🎭 Vibrant Cultural Hub",
+        "content": "It is not just a static historical site, but a vibrant modern urban living room. It hosts various outdoor art exhibitions, live concerts, and other cultural celebrations throughout the year."
       }
     ]
   },
@@ -82,7 +78,7 @@
     "officialName": "Official Name",
     "officialNameValue": "Plaza de la Hispanidad or Spain (Spain Square)",
     "type": "Attraction Type",
-    "typeValue": "Park",
+    "typeValue": "Historical Public Plaza / City Square",
     "country": "Country",
     "countryValue": "Dominican Republic",
     "city": "City",
@@ -97,26 +93,26 @@
   },
   "hours": {
     "title": "Opening Hours",
-    "outdoor": "Park Opening Hours",
-    "outdoorTime": "Daily 08:00–18:00",
-    "lighthouse": "Best Time to Visit",
-    "summer": "Daytime",
-    "summerTime": "Daytime visits offer the best experience",
-    "winter": "Recommended Visit Time",
-    "winterTime": "Morning or early afternoon",
-    "warning": "Important Notes",
-    "warningTime": "Recommended to verify latest information before visiting",
-    "tip": "Daytime visits offer the best experience"
+    "outdoor": "Square Area",
+    "outdoorTime": "Open to the public 24/7",
+    "lighthouse": "Nearby Museum (Alcázar de Colón)",
+    "summer": "Best Time to Visit",
+    "summerTime": "Around 5:00 PM, to enjoy the beautiful sunset",
+    "winter": "Night Tour",
+    "winterTime": "Incredibly romantic after lighting up at night, suitable for dinner",
+    "warning": "Alcázar de Colón Hours",
+    "warningTime": "Nearby official venues are usually open 08:00–18:00",
+    "tip": "Highly recommended to visit in the evening to enjoy the sunset and nightlife"
   },
   "tickets": {
     "title": "Important Information",
-    "outdoor": "Entrance Fee",
-    "outdoorPrice": "Free admission (subject to on-site confirmation)",
-    "lighthouse": "Parking Fee",
-    "adults": "Parking Cost",
-    "adultsPrice": "Please check official information",
-    "students": "Other Fees",
-    "studentsPrice": "Please check official announcements",
+    "outdoor": "Ticket Info",
+    "outdoorPrice": "The entire square area is free and open to the public",
+    "lighthouse": "Nearby Attractions",
+    "adults": "Alcázar de Colón Ticket",
+    "adultsPrice": "Separate ticket required (Please refer to on-site price)",
+    "students": "Dining Expenses",
+    "studentsPrice": "Varies depending on the outdoor restaurant",
     "card": "Guide Services & Directions",
     "cardPrice": "Local services may be available on-site (recommend confirming in advance). Directions: 👉 [Go to Plaza de la Hispanidad or Spain]",
     "officialNotice": "For the latest updates on opening hours and related information, please refer to the",
@@ -126,17 +122,17 @@
   "transport": {
     "title": "Transportation",
     "airport": "From the Airport",
-    "airportDesc": "It is relatively close to Santo Domingo Airport. It is recommended to take a taxi or public transportation after arriving in the city.",
+    "airportDesc": "From Las Américas International Airport (SDQ): About 28 km away. It is recommended to take a regular taxi or ride-hailing service (like Uber), traveling west on Autopista Las Américas and crossing the Ozama River bridge. The drive takes about 30-40 minutes.",
     "selfDrive": "Driving",
-    "selfDriveDesc": "Located in the city center of Santo Domingo. It is recommended to use navigation. There may be parking areas nearby.",
+    "selfDriveDesc": "As the Colonial Zone is a protected historical district with narrow one-way streets and no large public parking lots nearby, driving tourists are advised to park in compliant parking lots outside the zone and walk to the square.",
     "bus": "Public Transport",
-    "busDesc": "You can take public transportation in Santo Domingo to nearby areas, but please pay attention to the schedule.",
+    "busDesc": "Taking an Uber to the edge of the Colonial Zone and walking in is the most common and safest way to travel locally.",
     "intercity": "Walking Tour",
-    "intercityDesc": "There are walking paths in the park, walkable to various areas.",
+    "intercityDesc": "The entire Colonial Zone is very pedestrian-friendly. You can easily walk from the square to the Cathedral and other historical sites. The square is also highly wheelchair accessible.",
     "cycling": "Other Means",
-    "cyclingDesc": "Taxis or driving recommended, convenient transportation around the park.",
+    "cyclingDesc": "The square is paved with traditional cobblestones dating back centuries, but it is generally flat and open, suitable for a stroll.",
     "tips": "Travel Tips",
-    "tipsDesc": "Plaza de la Hispanidad or Spain is an excellent place to experience Santo Domingo's urban life. Visiting during sunny daylight hours is recommended."
+    "tipsDesc": "For the best visual and cultural experience, it is recommended to arrive in the evening (after 5:00 PM), seamlessly connecting the illuminated night views and outdoor dining."
   },
   "gallery": {
     "title": "Stunning Photos",
@@ -358,25 +354,25 @@
     "title": "Historical Timeline",
     "items": [
       {
-        "year": "Early Period",
-        "title": "Early Period: Square Construction",
-        "plaque": "Urban Landscape (Square)",
-        "description": "The construction of Plaza de la Hispanidad or Spain aimed to provide a beautiful public leisure space for Santo Domingo citizens, and has long been regarded as an important urban public space by local residents."
+        "year": "Early 16th Century",
+        "title": "Early 16th Century: Political and Trade Hub",
+        "plaque": "Starting point of the Spanish Empire in the Americas",
+        "description": "With the completion of the Alcázar de Colón and the Royal Shipyard, this place became the most important trade and political hub of the Spanish Empire in the Americas."
       },
       {
-        "year": "20th Century",
-        "title": "20th Century: Facility Improvement",
-        "plaque": "Urban Development (Square Construction)",
-        "description": "With the development of Santo Domingo, the square gradually improved walking paths and leisure facilities, becoming an important place for citizens' leisure and entertainment."
+        "year": "Late 20th Century",
+        "title": "Late 20th Century: World Heritage",
+        "plaque": "UNESCO Recognized",
+        "description": "As part of the 'Colonial City of Santo Domingo', it was listed as a World Heritage Site by UNESCO."
       },
       {
         "year": "21st Century",
-        "title": "21st Century: Urban Landmark",
-        "plaque": "Urban Identity (Public Space)",
-        "description": "Entering the 21st century, with its beautiful environment and important cultural value, it has attracted more tourists and become an important urban public space in Santo Domingo."
+        "title": "21st Century: Cultural and Leisure Center",
+        "plaque": "Modernization and Lighting",
+        "description": "After modernization and lighting improvements, it has become the most popular leisure, social, and dining square for tourists in the Dominican Republic."
       }
     ],
     "guideTitle": "Visitor Guide Tip",
-    "guideContent": "When visiting, you can start by strolling from the main entrance at C. La Atarazana 2; then walk around the square to enjoy the landscapes and cultural elements; if you have enough time, you can rest in the leisure areas and feel the local urban life. Finally, explore the urban scenery around the square and feel the charm of the Dominican capital."
+    "guideContent": "Strolling from the ancient cobblestone roads of the 16th century to the outdoor restaurants of today, Plaza de la Hispanidad perfectly blends the weight of history with modern vitality. It is recommended that you arrive at dusk to personally experience this dialogue across five centuries of time and space."
   }
 }

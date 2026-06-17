@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 export default function MapEmbed() {
   const t = useTranslations('mapSection');
-  const mapsUrl = "https://maps.app.goo.gl/cvGCS5qR3JAJubzo6";
+  const mapsUrl = "https://maps.app.goo.gl/2ZEU8XMUE9WRKLa17";
 
   return (
     <section id="map" className="section-padding" style={{ background: 'var(--bg-secondary)' }}>

@@ -29,7 +29,9 @@ export type DailyForecast = {
   code: number;
   max: number;
   min: number;
-  precip: number | null; // % 或 null
+  precip: number | null; // 降水概率 % 或 null
+  windMax: number | null; // 当日最大风速 km/h
+  uvMax: number | null; // 当日最大紫外线指数
 };
 
 export type WeatherModel = {
@@ -47,7 +49,7 @@ const buildQuery = () =>
     current:
       'temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,is_day',
     daily:
-      'weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max',
+      'weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max,uv_index_max',
     timezone: 'America/Santo_Domingo',
     forecast_days: '7',
     wind_speed_unit: 'kmh',
@@ -98,6 +100,14 @@ export function normalizeWeather(json: any): WeatherModel | null {
     precip:
       typeof d.precipitation_probability_max?.[i] === 'number'
         ? Math.round(d.precipitation_probability_max[i])
+        : null,
+    windMax:
+      typeof d.wind_speed_10m_max?.[i] === 'number'
+        ? Math.round(d.wind_speed_10m_max[i])
+        : null,
+    uvMax:
+      typeof d.uv_index_max?.[i] === 'number'
+        ? Math.round(d.uv_index_max[i])
         : null,
   }));
 

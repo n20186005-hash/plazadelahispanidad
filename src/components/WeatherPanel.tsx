@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   weatherApiUrl,
   normalizeWeather,
@@ -9,6 +9,7 @@ import {
   type WeatherModel,
   type WeatherGroup,
 } from '@/lib/weather';
+import { dailyAdvice, uvLevelLabel, type AdviceGroup } from '@/lib/weatherAdvice';
 
 const intlLocaleOf = (locale: string) =>
   locale === 'zh' ? 'zh-CN' : locale === 'es' ? 'es' : 'en';
@@ -92,6 +93,50 @@ function WeatherIcon({ group, size = 40 }: { group: WeatherGroup; size?: number 
   }
 }
 
+/** 建议分组的线性图标 */
+function AdviceGlyph({ group, size = 18 }: { group: AdviceGroup; size?: number }) {
+  const common = {
+    width: size,
+    height: size,
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    stroke: 'currentColor',
+    strokeWidth: 2,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  };
+
+  switch (group) {
+    case 'risk':
+      return (
+        <svg {...common}>
+          <path d="M12 3 2.5 20h19z" />
+          <path d="M12 9.5v4.5M12 16.6v.1" />
+        </svg>
+      );
+    case 'outfit':
+      return (
+        <svg {...common}>
+          <path d="M12 4c1.6 0 3 1.4 4 2.6L20 9l-2 2-1.6-1.3V20H7.6V9.7L6 11 4 9l4-2.4C9 5.4 10.4 4 12 4z" />
+        </svg>
+      );
+    case 'play':
+      return (
+        <svg {...common}>
+          <circle cx="12" cy="13.5" r="3.5" />
+          <path d="M12 6V3M5.3 8.3 3.2 6.2M18.7 8.3l2.1-2.1M3 17h4M17 17h4M8 20h8" />
+        </svg>
+      );
+    case 'items':
+      return (
+        <svg {...common}>
+          <path d="M5 9h14v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z" />
+          <path d="M9 9V7a3 3 0 0 1 6 0v2M8 13h8" />
+        </svg>
+      );
+  }
+}
+
 export default function WeatherPanel({ weather: initial }: { weather: WeatherModel }) {
   const t = useTranslations('weather');
   const locale = useLocale();
@@ -135,6 +180,27 @@ export default function WeatherPanel({ weather: initial }: { weather: WeatherMod
 
   const cur = weather.current;
   const daily = weather.daily;
+  const today = daily[0] ?? null;
+  const humidity = cur?.humidity ?? null;
+
+  // 游客智能建议（规则引擎，动态返回、有才显示）
+  const advice = useMemo(
+    () => (today ? dailyAdvice(today, humidity) : []),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [today, humidity]
+  );
+
+  const risk = advice.filter((a) => a.group === 'risk');
+  const outfit = advice.filter((a) => a.group === 'outfit');
+  const play = advice.filter((a) => a.group === 'play');
+  const items = advice.filter((a) => a.group === 'items');
+
+  const todayPrecip = today?.precip ?? null;
+  const todayUv = today?.uvMax ?? null;
+  const todayTemp =
+    today && typeof today.max === 'number' ? t('tempToday', { max: today.max, min: today.min }) : null;
+  const humidHeavy =
+    cur && typeof humidity === 'number' && typeof today?.max === 'number' && today.max >= 27 && humidity >= 78;
 
   return (
     <section className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
@@ -159,7 +225,7 @@ export default function WeatherPanel({ weather: initial }: { weather: WeatherMod
           style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}
         >
           {/* 当前天气 */}
-          <div className="flex flex-wrap items-center gap-x-10 gap-y-6 mb-8">
+          <div className="flex flex-wrap items-center gap-x-10 gap-y-6 mb-6">
             {cur ? (
               <>
                 <div className="flex items-center gap-4">
@@ -189,9 +255,9 @@ export default function WeatherPanel({ weather: initial }: { weather: WeatherMod
                     </dd>
                   </div>
                   <div>
-                    <dt className="text-xs" style={{ color: 'var(--text-muted)' }}>{t('humidity')}</dt>
+                    <dt className="text-xs" style={{ color: 'var(--text-muted)' }}>{t('precipToday')}</dt>
                     <dd className="mt-0.5 font-medium" style={{ color: 'var(--text-primary)' }}>
-                      {cur.humidity}%
+                      {typeof todayPrecip === 'number' ? `${todayPrecip}%` : '—'}
                     </dd>
                   </div>
                   <div>
@@ -209,10 +275,139 @@ export default function WeatherPanel({ weather: initial }: { weather: WeatherMod
             )}
           </div>
 
+          {/* 今日一句话概览 */}
+          {todayTemp && (
+            <div className="flex flex-wrap items-center gap-2 mb-8 text-sm">
+              {cur && (
+                <span className="font-medium" style={{ color: 'var(--text-secondary)' }}>
+                  {t(`conditions.${weatherGroup(cur.code)}`)}
+                </span>
+              )}
+              <span className="font-medium" style={{ color: 'var(--text-primary)' }}>
+                {todayTemp}
+              </span>
+              {typeof todayPrecip === 'number' && (
+                <span className="px-2.5 py-1 rounded-full text-xs" style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', color: 'var(--text-secondary)' }}>
+                  {t('rainProb', { v: todayPrecip })}
+                </span>
+              )}
+              {typeof todayUv === 'number' && todayUv >= 5 && (
+                <span className="px-2.5 py-1 rounded-full text-xs" style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', color: 'var(--accent)' }}>
+                  {t('uvNow', { level: t(`uvLevels.${uvLevelLabel(todayUv)}`) })}
+                </span>
+              )}
+              {humidHeavy && (
+                <span className="px-2.5 py-1 rounded-full text-xs" style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)', color: 'var(--text-secondary)' }}>
+                  {t('humidHigh')}
+                </span>
+              )}
+            </div>
+          )}
+
+          {/* 智能建议 */}
+          {today && (risk.length > 0 || outfit.length > 0 || play.length > 0 || items.length > 0) && (
+            <>
+              <h3 className="font-display text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
+                {t('adviceSectionTitle')}
+              </h3>
+
+              {risk.length > 0 && (
+                <div
+                  className="flex items-start gap-3 rounded-xl px-4 py-3.5 mb-4"
+                  style={{
+                    background: 'rgba(192, 71, 59, 0.08)',
+                    border: '1px solid rgba(192, 71, 59, 0.35)',
+                    color: '#b03a2e',
+                  }}
+                >
+                  <span className="flex-shrink-0 mt-0.5">
+                    <AdviceGlyph group="risk" />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="text-sm font-semibold mb-1">{t('riskTitle')}</p>
+                    <ul className="space-y-1">
+                      {risk.map((a) => (
+                        <li key={a.key} className="text-sm leading-relaxed">
+                          {t(`advice.${a.key}`)}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {(outfit.length > 0 || play.length > 0) && (
+                <div className="flex flex-wrap gap-4 mb-4">
+                  {outfit.length > 0 && (
+                    <div
+                      className="flex-1 min-w-[240px] rounded-xl px-4 py-4"
+                      style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)' }}
+                    >
+                      <p className="flex items-center gap-2 text-sm font-semibold mb-2" style={{ color: 'var(--accent)' }}>
+                        <AdviceGlyph group="outfit" />
+                        {t('outfitTitle')}
+                      </p>
+                      <ul className="space-y-1.5">
+                        {outfit.map((a) => (
+                          <li key={a.key} className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                            {t(`advice.${a.key}`)}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {play.length > 0 && (
+                    <div
+                      className="flex-1 min-w-[240px] rounded-xl px-4 py-4"
+                      style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)' }}
+                    >
+                      <p className="flex items-center gap-2 text-sm font-semibold mb-2" style={{ color: 'var(--accent)' }}>
+                        <AdviceGlyph group="play" />
+                        {t('playTitle')}
+                      </p>
+                      <ul className="space-y-1.5">
+                        {play.map((a) => (
+                          <li key={a.key} className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                            {t(`advice.${a.key}`)}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {items.length > 0 && (
+                <div
+                  className="rounded-xl px-4 py-4"
+                  style={{ background: 'var(--card-bg)', border: '1px solid var(--border-color)' }}
+                >
+                  <p className="flex items-center gap-2 text-sm font-semibold mb-2" style={{ color: 'var(--accent)' }}>
+                    <AdviceGlyph group="items" />
+                    {t('itemsTitle')}
+                  </p>
+                  <ul className="space-y-1.5">
+                    {items.map((a) => (
+                      <li key={a.key} className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                        {t(`advice.${a.key}`)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </>
+          )}
+
+          {today && risk.length === 0 && outfit.length === 0 && play.length === 0 && items.length === 0 && (
+            <p className="text-sm mb-6" style={{ color: 'var(--text-muted)' }}>
+              {t('noAdvice')}
+            </p>
+          )}
+
           {/* 未来数日 */}
           {daily.length > 0 && (
             <>
-              <h3 className="font-display text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
+              <h3 className="font-display text-lg font-semibold mb-4 mt-8" style={{ color: 'var(--text-primary)' }}>
                 {t('forecastTitle')}
               </h3>
               <div className="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1">

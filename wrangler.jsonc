@@ -1,0 +1,14 @@
+{
+  // 本项目是 Next.js 纯静态导出（output: 'export'，产物目录 ./out）。
+  // 用 assets-only Worker 静态托管，避免被误判为 OpenNext 服务端应用。
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "plazadelahispanidad",
+  "compatibility_date": "2026-09-08",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

@@ -491,6 +491,98 @@
       "humidOutfit": "El ambiente se siente húmedo: use ropa transpirable."
     }
   },
+  "sea": {
+    "title": "Mar y mareas cerca de Santo Domingo",
+    "subtitle": "La ciudad se asoma al mar Caribe. La temperatura del agua, las olas y el suave ritmo de las mareas ayudan a planear un paseo por el Malecón o una salida por la costa. Aquí las mareas son pequeñas: el rango diario suele ser de solo 0,2–0,4 m.",
+    "seaTemp": "Temp. del agua",
+    "waves": "Altura de las olas",
+    "period": "Periodo de las olas",
+    "direction": "Dirección de las olas",
+    "current": "Corriente marina",
+    "tideNowState": "Marea ahora: {state}",
+    "rising": "subiendo",
+    "falling": "bajando",
+    "eventsTitle": "Próximas pleamares y bajamares",
+    "high": "Pleamar",
+    "low": "Bajamar",
+    "today": "Hoy",
+    "tomorrow": "Mañana",
+    "unavailable": "Cargando los datos de mar y marea… se actualizarán automáticamente en un momento.",
+    "foot": "Valores estimados por un modelo oceánico costero cercano a Santo Domingo y actualizados cada hora. Las horas de marea son orientativas (± 1 hora aprox.) y no sirven para la navegación ni usos profesionales."
+  },
+  "season": {
+    "title": "Estrategia de visita por temporadas · Clima y naturaleza de un vistazo",
+    "subtitle": "Santo Domingo es cálido todo el año; lo que de verdad cambia son la lluvia y el viento. Esta sección resume las normales climáticas de ~30 años y el calendario ecológico caribeño en una tabla para ver rápido cuándo venir y cómo organizarse. Son valores promedio a largo plazo; compruebe siempre los paneles en vivo de tiempo y mar de arriba.",
+    "periodsTitle": "Cuatro ventanas estacionales · Resumen",
+    "monthlyTitle": "Mes a mes (promedios anuales)",
+    "monthlyHint": "El confort de visita se valora según el clima promedio: ●●● ideal (seco y soleado) · ●● aceptable (según el tiempo) · ● complicado (calor, lluvias o dentro de la ventana ciclónica pico).",
+    "cols": {
+      "period": "Periodo",
+      "weather": "Tiempo y temperatura",
+      "sea": "Mar y calidad del agua",
+      "wildlife": "Fauna",
+      "plan": "Estrategia de visita"
+    },
+    "periods": [
+      {
+        "id": "q1",
+        "name": "Temporada seca de alisios",
+        "months": "Dic – Feb",
+        "weather": "La ventana más seca y cómoda del año: máximas en torno a 30°C y noches de unos 21°C; solo ~59–77 mm de lluvia al mes, con sol abundante y la humedad más baja del año.",
+        "sea": "El agua está en su punto más fresco, unos 26–27°C. Los alisios del noreste soplan con fuerza pero el mar sigue en calma; con tan poca lluvia el agua costera suele estar limpia—ideal para el Malecón o un paseo en barco.",
+        "wildlife": "Temporada de ballenas en marcha: de mediados de enero a finales de marzo es el período oficial de avistamiento en la bahía de Samaná, una excursión dedicada al norte desde Santo Domingo. La anidación de tortugas aún no ha empezado.",
+        "plan": "Una ventana dorada por clima: paseos al aire libre, atardeceres y cenas en terrazas. Coincide con la temporada alta de Navidad y Año Nuevo: reserve alojamiento y restaurantes populares con antelación; las noches pueden ser frescas, lleve una capa ligera."
+      },
+      {
+        "id": "q2",
+        "name": "Transición cálida",
+        "months": "Mar – May",
+        "weather": "Las temperaturas suben hasta máximas de unos 30,5–31,5°C. Marzo sigue seco, pero en mayo la lluvia salta a ~150 mm al empezar la estación húmeda y volver los aguaceros de la tarde.",
+        "sea": "El agua se calienta hasta unos 27–28°C y nadar resulta más agradable, mientras el viento y el oleaje se reducen. La claridad suele ser buena hacia abril; cuando la lluvia arrecía en mayo, la escorrentía puede enturbiar temporalmente el agua cerca de las desembocaduras.",
+        "wildlife": "Empieza la anidación de tortugas marinas (aprox. de marzo a octubre): las hembras salen de noche en playas protegidas, sobre todo en las costas este y sureste más que en el litoral urbano.",
+        "plan": "Una temporada tranquila y de buena relación calidad-precio, especialmente marzo–abril. En mayo, mejor planes al aire libre por la mañana e interiores por la tarde. La afluencia baja tras el fin de la temporada de ballenas a finales de marzo."
+      },
+      {
+        "id": "q3",
+        "name": "Calor pleno del verano",
+        "months": "Jun – Ago",
+        "weather": "El tramo más caluroso: máximas cercanas a 32°C, noches de ~24°C, con bochorno y humedad alta. El 1 de junio se abre oficialmente la temporada de huracanes del Atlántico (6/1–11/30), y en agosto la lluvia alcanza su pico de ~195 mm con tormentas vespertinas frecuentes.",
+        "sea": "El agua llega a unos 28–29°C y está en calma para bañarse. El verano es la época de mayor presencia de sargazo en el Caribe—en algunos años afecta a playas orientadas al sureste; compruebe las condiciones antes de salir.",
+        "wildlife": "Pico de anidación de tortugas y comienzo de la eclosión de crías desde julio; el desove de corales se concentra en las lunas llenas de agosto–octubre (buceo nocturno con operadores autorizados).",
+        "plan": "Alta relación calidad-precio pero el clima más exigente: evite el sol del mediodía, combine museos y galerías durante el día y salga de nuevo al atardecer; vigile la trayectoria de tormentas tropicales, sobre todo en agosto."
+      },
+      {
+        "id": "q4",
+        "name": "Lluvias de otoño y cierre",
+        "months": "Sep – Nov",
+        "weather": "Septiembre–octubre son el pico histórico de lluvias (~177–192 mm/mes) y de la actividad ciclónica; noviembre se calma. Las máximas bajan de ~32°C a ~31°C y el bochorno se reduce poco a poco.",
+        "sea": "El agua alcanza su máximo de ~29°C y luego se enfría lentamente. Uno o dos días después de una tormenta tropical o lluvias fuertes, el mar y la costa están en su peor momento—mejor evitarlo. Tras mediados de octubre la probabilidad de ciclones baja claramente.",
+        "wildlife": "Las crías de tortuga siguen emergiendo hacia finales de otoño mientras la anidación termina; las ballenas jorobadas vuelven a las bahías del norte solo en diciembre.",
+        "plan": "Lo clave es evitar el núcleo ciclónico (septiembre a principios de octubre): si viaja entonces, reserve vuelos y hoteles flexibles. Desde noviembre vuelve la sequedad y el confort: un muy buen período de temporada media."
+      }
+    ],
+    "monthNames": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+    "metrics": {
+      "highLow": "Máx / mín diaria",
+      "rain": "Lluvia mensual",
+      "sea": "Temp. del mar"
+    },
+    "suitLevels": {
+      "best": "Ideal",
+      "good": "Aceptable",
+      "fair": "Complicado"
+    },
+    "tags": {
+      "whale": "Temporada de ballenas (Samaná)",
+      "turtles": "Anidación de tortugas",
+      "hatchlings": "Eclosión de crías",
+      "sargassum": "Riesgo de sargazo",
+      "hurricane": "Temporada de huracanes abierta",
+      "hurricaneCore": "Ventana ciclónica pico",
+      "festive": "Temporada alta de fiestas"
+    },
+    "foot": "Notas: temperatura y lluvia según las normales climáticas NOAA 1991–2020 de Santo Domingo; la temperatura del mar es una aproximación climatológica a largo plazo; ballenas, tortugas y otros eventos de fauna reflejan el calendario ecológico típico de la zona. Todos los valores varían cada año—esta sección es solo contexto climático y no sustituye a los paneles en vivo de tiempo y mar."
+  },
   "facilities": {
     "title": "Servicios Útiles para el Visitante",
     "subtitle": "Información neutral por tipo de servicio para ayudarle a planificar la visita. Este es un sitio divulgativo sin ánimo de lucro: no recomendamos negocios concretos, y las condiciones dependen siempre de lo que encuentre in situ.",

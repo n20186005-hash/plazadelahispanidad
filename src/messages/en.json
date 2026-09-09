@@ -491,6 +491,98 @@
       "humidOutfit": "The air feels muggy — choose breathable clothing."
     }
   },
+  "sea": {
+    "title": "Sea & Tide near Santo Domingo",
+    "subtitle": "The city faces the Caribbean Sea. Water temperature, waves and the gentle tidal rhythm help you plan a stroll along the Malecón or a trip to the coast. Tides here are small — the daily range is usually just 0.2–0.4 m.",
+    "seaTemp": "Water temp",
+    "waves": "Wave height",
+    "period": "Wave period",
+    "direction": "Wave direction",
+    "current": "Sea current",
+    "tideNowState": "Tide now: {state}",
+    "rising": "rising",
+    "falling": "falling",
+    "eventsTitle": "Next high & low water",
+    "high": "High water",
+    "low": "Low water",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "unavailable": "Sea and tide data is loading… it will refresh automatically in a moment.",
+    "foot": "Values are coastal ocean-model estimates near Santo Domingo and refresh every hour. Tide times are indicative (± about one hour) and are not intended for navigation or professional use."
+  },
+  "season": {
+    "title": "Year-Round Visit Strategy · Seasons & Nature at a Glance",
+    "subtitle": "Santo Domingo stays warm all year—what really changes is rain and wind. This section condenses ~30 years of climate normals and Caribbean wildlife calendars into a table so you can quickly see when to come and how to plan. Values are long-term averages; always cross-check the live weather and sea panels above.",
+    "periodsTitle": "Four Seasonal Windows · Overview",
+    "monthlyTitle": "Month by Month (Long-Term Averages)",
+    "monthlyHint": "Visit comfort is rated from the long-term climate: ●●● ideal (dry and sunny) · ●● decent (plan around the weather) · ● challenging (hot, wet, or inside the peak hurricane window).",
+    "cols": {
+      "period": "Period",
+      "weather": "Weather & Temperatures",
+      "sea": "Sea & Water Quality",
+      "wildlife": "Wildlife",
+      "plan": "Visit Strategy"
+    },
+    "periods": [
+      {
+        "id": "q1",
+        "name": "Trade-Wind Dry Season",
+        "months": "Dec – Feb",
+        "weather": "The driest, most comfortable window of the year: daytime highs around 30°C, nights near 21°C, only ~59–77 mm of rain a month, strong sunshine and the lowest humidity of the year.",
+        "sea": "Seawater is at its coolest, roughly 26–27°C. The northeast trades blow briskly but seas stay generally calm; with so little rain the coastal water is usually clear—great for a Malecón stroll or a sightseeing boat ride.",
+        "wildlife": "Humpback season is on: mid-January to late March is the official whale-watching window in Samaná Bay, a dedicated trip north from Santo Domingo. Sea-turtle nesting has not started yet.",
+        "plan": "A golden window climatologically—outdoor walks, sunsets and terrace dining all shine. It overlaps the Christmas–New Year high season, so book lodging and popular restaurants ahead; evenings can feel breezy, so bring a light layer."
+      },
+      {
+        "id": "q2",
+        "name": "Warming Transition",
+        "months": "Mar – May",
+        "weather": "Temperatures edge up to daytime highs of about 30.5–31.5°C. March stays dry, but May jumps to ~150 mm of rain as the wet season begins and afternoon showers return.",
+        "sea": "Water warms to about 27–28°C—swimming gets more pleasant—while wind and waves ease. Clarity is typically good around April; once the rain picks up in May, heavy runoff can temporarily cloud the water near river mouths.",
+        "wildlife": "Sea-turtle nesting begins (roughly March–October): females come ashore at night on protected beaches, mostly along the east and southeast coasts rather than the city waterfront.",
+        "plan": "A quieter, good-value season—especially March–April. In May plan outdoor stops for the morning and indoor ones for the afternoon. Crowds thin out after whale season ends in late March."
+      },
+      {
+        "id": "q3",
+        "name": "Midsummer Heat",
+        "months": "Jun – Aug",
+        "weather": "The hottest stretch: highs near 32°C, nights about 24°C, humid and muggy. The Atlantic hurricane season officially opens 1 June (6/1–11/30), and August rainfall peaks at ~195 mm with frequent afternoon thunderstorms.",
+        "sea": "Water reaches roughly 28–29°C and is calm for swimming. Summer is the peak sargassum window across the Caribbean—in some years southeast-facing beaches are affected, so check recent conditions before heading out.",
+        "wildlife": "Sea-turtle nesting peaks and hatchlings start emerging from July; coral spawning clusters around the August–October full moons (join a licensed night snorkel).",
+        "plan": "High value but the most weather-challenging season: skip the midday sun, mix in museums and galleries by day and head out again toward sunset—and keep an eye on tropical-storm tracks, especially in August."
+      },
+      {
+        "id": "q4",
+        "name": "Autumn Rain & Tail",
+        "months": "Sep – Nov",
+        "weather": "September–October mark the historical peak of rainfall (~177–192 mm/month) and hurricane activity; November settles down. Daytime highs ease from about 32°C toward 31°C and the mugginess slowly fades.",
+        "sea": "Seawater peaks near 29°C, then gradually cools. For a day or two after a tropical storm or heavy rain, seas and near-shore water are at their roughest—best avoided. After mid-October storm odds drop markedly.",
+        "wildlife": "Turtle hatchlings keep emerging into late autumn as nesting winds down; humpbacks return to the northern bays only in December.",
+        "plan": "The key is avoiding the core storm window (September to early October): if you travel then, book flexible, refundable flights and hotels. From November the dry comfort returns—a smart shoulder season."
+      }
+    ],
+    "monthNames": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "metrics": {
+      "highLow": "Daily high / low",
+      "rain": "Monthly rain",
+      "sea": "Sea temp"
+    },
+    "suitLevels": {
+      "best": "Ideal",
+      "good": "Good",
+      "fair": "Challenging"
+    },
+    "tags": {
+      "whale": "Whale season (Samaná)",
+      "turtles": "Sea-turtle nesting",
+      "hatchlings": "Turtle hatchlings",
+      "sargassum": "Sargassum risk",
+      "hurricane": "Hurricane season open",
+      "hurricaneCore": "Peak hurricane window",
+      "festive": "Holiday high season"
+    },
+    "foot": "Notes: temperature and rainfall use NOAA 1991–2020 climate normals for Santo Domingo; sea temperature is a long-term climatological approximation; whale, turtle and other wildlife items reflect the area's typical multi-year ecological calendar. All figures vary from year to year—this section is climate background only and does not replace the live weather and sea panels above."
+  },
   "facilities": {
     "title": "Visitor Facilities & Local Services",
     "subtitle": "Neutral, type-only information to help you plan your visit. This is a nonprofit educational website: we do not recommend any specific business, and conditions always depend on what you find on site.",

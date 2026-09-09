@@ -12,6 +12,8 @@ import HoursSection from '@/components/HoursSection';
 import TicketsSection from '@/components/TicketsSection';
 import TransportSection from '@/components/TransportSection';
 import WeatherSection from '@/components/WeatherSection';
+import SeaTideSection from '@/components/SeaTideSection';
+import SeasonGuideSection from '@/components/SeasonGuideSection';
 import Gallery from '@/components/Gallery';
 import Reviews from '@/components/Reviews';
 import FAQSection from '@/components/FAQSection';
@@ -43,6 +45,8 @@ export default async function HomePage({
         <TicketsSection />
         <TransportSection />
         <WeatherSection />
+        <SeaTideSection />
+        <SeasonGuideSection />
         <Gallery />
         <Reviews />
         <FAQSection />

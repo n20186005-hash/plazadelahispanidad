@@ -1,7 +1,9 @@
 import { useTranslations, useMessages } from 'next-intl';
+import { SITE } from '@/lib/site';
 
 export default function Intro() {
   const t = useTranslations('intro');
+  const tB = useTranslations('basicInfo');
   const tOff = useTranslations('officialManagement');
   const messages = useMessages() as any;
   const items: string[] = messages?.intro?.visitGuide?.items || [];
@@ -10,6 +12,25 @@ export default function Intro() {
   return (
     <section className="section-padding">
       <div className="max-w-4xl mx-auto">
+        {/* 地理面包屑：景点 → 城市 → 省 → 国家 */}
+        <nav aria-label="Breadcrumb" className="mb-10">
+          <ol className="flex flex-wrap items-center gap-2 text-sm">
+            {[SITE.fullName, SITE.city, SITE.region, tB('countryValue')].map((crumb, i, arr) => (
+              <li key={i} className="flex items-center gap-2">
+                {i > 0 && <span style={{ color: 'var(--text-muted)' }}>›</span>}
+                <span
+                  style={{
+                    color: i === arr.length - 1 ? 'var(--text-primary)' : 'var(--text-secondary)',
+                    fontWeight: i === arr.length - 1 ? 600 : 400,
+                  }}
+                >
+                  {crumb}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
         <h2
           className="font-display text-3xl sm:text-4xl font-semibold mb-6"
           style={{ color: 'var(--text-primary)' }}
@@ -17,6 +38,14 @@ export default function Intro() {
           {t('title')}
         </h2>
         <div className="w-12 h-0.5 mb-8" style={{ background: 'var(--accent)' }} />
+
+        {/* 首段等位声明：域名含义 = 官方全称 */}
+        <p
+          className="text-lg leading-relaxed mb-6 font-medium"
+          style={{ color: 'var(--text-primary)' }}
+        >
+          {t('welcome')}
+        </p>
 
         <p
           className="text-lg leading-relaxed mb-12"

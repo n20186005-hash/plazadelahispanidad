@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useCallback } from 'react';
+import { SITE } from '@/lib/site';
 
 const photoFiles = [
   'plaza-de-la-hispanidad-or-spain (1).jpg',
@@ -32,10 +33,15 @@ export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  const photos = photoFiles.map((file, i) => ({
-    src: `/gallery/${file}`,
-    alt: captions?.[i] || `Plaza de la Hispanidad or Spain ${i + 1}`,
-  }));
+  const photos = photoFiles.map((file, i) => {
+    const caption = captions?.[i] || `${SITE.fullName} ${i + 1}`;
+    return {
+      src: `/gallery/${file}`,
+      caption,
+      // 图片 alt 语义绑定实体名称与城市
+      alt: `${caption} - ${SITE.shortName}, ${SITE.city}`,
+    };
+  });
 
   const visiblePhotos = photos;
 
@@ -83,7 +89,7 @@ export default function Gallery() {
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors rounded-lg flex items-end">
                     <p className="text-white text-sm p-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                      {photo.alt}
+                      {photo.caption}
                     </p>
                   </div>
                 </div>

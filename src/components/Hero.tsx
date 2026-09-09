@@ -10,8 +10,10 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src="/gallery/plaza-de-la-hispanidad-or-spain (1).jpg"
-          alt="Plaza de la Hispanidad or Spain"
+          alt="Plaza de la Hispanidad or Spain - Main view in Santo Domingo, Dominican Republic"
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0" style={{ background: 'var(--hero-overlay)' }} />
       </div>

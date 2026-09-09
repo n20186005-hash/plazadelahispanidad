@@ -1,8 +1,10 @@
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
+import { SITE } from '@/lib/site';
 
 export default function Footer() {
   const t = useTranslations('footer');
+  const tB = useTranslations('basicInfo');
   const locale = useLocale();
   const prefix = `/${locale}`;
 
@@ -17,20 +19,31 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-start gap-8 mb-8">
           <div className="max-w-md">
+            {/* 官方全称（与 Google 地图资料一致） */}
             <h3 className="font-display text-lg font-semibold mb-1" style={{ color: 'var(--text-primary)' }}>
-              Plaza de la Hispanidad or Spain
+              {SITE.fullName}
             </h3>
+            <p className="text-xs mb-3" style={{ color: 'var(--text-muted)' }}>
+              {SITE.spanishFullName} · {tB('countryValue')}
+            </p>
+
+            {/* NAP：名称、地址、电话与 Google 地图资料保持一致 */}
+            <div className="space-y-1 mb-4 text-sm" style={{ color: 'var(--text-secondary)' }}>
+              <p>{tB('addressValue')}</p>
+              <p>{tB('phoneValue')}</p>
+            </div>
+
             <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
               {t('officialResourcesTitle')}
             </p>
             <div className="flex flex-col gap-2">
               {officialLinks.map((link, i) => (
-                <a 
+                <a
                   key={i}
-                  href={link.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:underline text-sm" 
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-sm"
                   style={{ color: 'var(--accent)' }}
                 >
                   {link.name}
@@ -57,6 +70,8 @@ export default function Footer() {
         >
           <p>{t('rights')}</p>
           <p className="text-xs max-w-3xl mx-auto leading-relaxed">{t('disclaimer')}</p>
+          {/* 图片产权声明 */}
+          <p className="text-xs max-w-3xl mx-auto leading-relaxed">{t('imageCredit')}</p>
         </div>
       </div>
     </footer>

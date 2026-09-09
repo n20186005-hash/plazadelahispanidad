@@ -1,8 +1,9 @@
 import { useTranslations } from 'next-intl';
+import { SITE } from '@/lib/site';
 
 export default function MapEmbed() {
   const t = useTranslations('mapSection');
-  const mapsUrl = "https://maps.app.goo.gl/2ZEU8XMUE9WRKLa17";
+  const mapsUrl = SITE.mapsShareUrl;
 
   return (
     <section id="map" className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
@@ -16,29 +17,25 @@ export default function MapEmbed() {
         <p className="mb-8 text-sm" style={{ color: 'var(--text-muted)' }}>{t('subtitle')}</p>
         <div className="w-12 h-0.5 mb-10" style={{ background: 'var(--accent)' }} />
 
-        {/* Map */}
+        {/* Google 地图官方嵌入（实体绑定经纬度） */}
         <div
           className="map-container relative rounded-xl overflow-hidden"
           style={{ border: '1px solid var(--map-border)' }}
         >
-          {/*
-            NOTE: Google Maps attribution is hidden via CSS (.gm-style-cc, .gmnoprint).
-            This is for visual cleanliness only. Google's Terms of Service apply.
-          */}
           <iframe
-            src="https://maps.google.com/maps?q=Plaza+de+la+Hispanidad+or+Spain,+Santo+Domingo,+Dominican+Republic&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src={SITE.mapsEmbedSrc}
             width="100%"
             height="450"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps - Plaza de la Hispanidad or Spain"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title={`Google Maps - ${SITE.fullName}`}
           />
         </div>
 
         {/* Open in Google Maps */}
-        <div className="mt-6 flex justify-center">
+        <div className="mt-6 flex flex-col items-center gap-4">
           <a
             href={mapsUrl}
             target="_blank"
@@ -57,6 +54,20 @@ export default function MapEmbed() {
               <line x1="10" y1="14" x2="21" y2="3" />
             </svg>
           </a>
+
+          {/* 权威出站链接（.gob.do） */}
+          <p className="text-sm text-center leading-relaxed max-w-2xl" style={{ color: 'var(--text-muted)' }}>
+            {t('officialPortal')}{' '}
+            <a
+              href={SITE.govTourismUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline font-medium"
+              style={{ color: 'var(--accent)' }}
+            >
+              {t('officialPortalLinkLabel')}
+            </a>
+          </p>
         </div>
       </div>
     </section>

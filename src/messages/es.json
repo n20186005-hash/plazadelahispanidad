@@ -1,7 +1,8 @@
 {
   "meta": {
-    "title": "Plaza de la Hispanidad or Spain | Plaza de España",
-    "description": "Explora la Plaza de la Hispanidad en Santo Domingo, República Dominicana. Área central del Patrimonio de la Humanidad y el principal destino para cenar al aire libre."
+    "title": "Plaza de España o de la Hispanidad (Santo Domingo) - Guía del Visitante y Ubicación",
+    "ogTitle": "Plaza de España o de la Hispanidad - Guía de Viaje de Santo Domingo",
+    "description": "Descubre la Plaza de España o de la Hispanidad, el hito emblemático de Santo Domingo, Distrito Nacional, República Dominicana. Consulta el mapa de ubicación, horarios, el cercano Alcázar de Colón y consejos de viaje."
   },
   "header": {
     "home": "Inicio",
@@ -11,15 +12,16 @@
     "backToHome": "Volver al Inicio"
   },
   "hero": {
-    "title": "Plaza de la Hispanidad",
+    "title": "Plaza de España o de la Hispanidad (Santo Domingo)",
     "subtitle": "República Dominicana · Hito Histórico Central de la Zona Colonial de Santo Domingo",
     "rating": "4.7",
-    "reviewCount": "13,710",
+    "reviewCount": "13,819",
     "hours": "Plaza Pública Histórica",
     "openMaps": "Ver Ubicación"
   },
   "intro": {
     "title": "Explora la Plaza Histórica Más Antigua de las Américas",
+    "welcome": "Bienvenido a la Plaza de España o de la Hispanidad, ampliamente reconocida como la Plaza de la Hispanidad central de Santo Domingo. Situada en el corazón de Santo Domingo, Distrito Nacional, República Dominicana, esta plaza histórica es el principal punto de encuentro para los viajeros que visitan la región.",
     "description": "La Plaza de la Hispanidad (también conocida como Plaza de España) se encuentra en la Zona Colonial, el núcleo histórico de Santo Domingo, República Dominicana. Como parte importante del asentamiento europeo más antiguo que se conserva en las Américas, la plaza está adyacente al río Ozama. No solo lleva la profunda historia de la Era de los Descubrimientos, sino que ahora es el centro cultural y espacio de ocio público más vibrante de Santo Domingo.",
     "visitGuide": {
       "title": "Comodidades y Accesibilidad",
@@ -220,7 +222,9 @@
   "mapSection": {
     "title": "Ubicación y Mapa",
     "subtitle": "C. La Atarazana 2, Santo Domingo 10212, República Dominicana",
-    "openMaps": "Ver en Google Maps"
+    "openMaps": "Ver en Google Maps",
+    "officialPortal": "Para obtener actualizaciones oficiales e información turística regional, visite el",
+    "officialPortalLinkLabel": "Ministerio de Turismo de la República Dominicana (mitur.gob.do)"
   },
   "footer": {
     "rights": "© 2026 Plaza de la Hispanidad or Spain. Todos los derechos reservados.",
@@ -250,7 +254,8 @@
         "url": "https://www.godominicanrepublic.com/"
       }
     },
-    "disclaimer": "Este sitio web es un proyecto independiente de información turística de terceros. No tenemos afiliación con el gobierno local u otras instituciones oficiales."
+    "disclaimer": "Este sitio web es un proyecto independiente de información turística de terceros. No tenemos afiliación con el gobierno local u otras instituciones oficiales.",
+    "imageCredit": "Crédito de las imágenes: todas las fotografías mostradas en este sitio web son solo de referencia; todos los derechos de imagen y copyright pertenecen a sus fotógrafos originales."
   },
   "privacy": {
     "title": "Política de Privacidad",
@@ -374,5 +379,129 @@
     ],
     "guideTitle": "Consejo de Guía para Visitantes",
     "guideContent": "Paseando desde las antiguas calles adoquinadas del siglo XVI hasta los restaurantes al aire libre de hoy, la Plaza de la Hispanidad combina perfectamente el peso de la historia con la vitalidad moderna. Te recomendamos llegar al atardecer para experimentar personalmente este diálogo a través de cinco siglos de tiempo y espacio."
+  },
+  "nearby": {
+    "title": "Lugares Emblemáticos y Atracciones Alrededor de la Plaza de la Hispanidad",
+    "description": "Al visitar la Plaza de la Hispanidad or Spain, los visitantes pueden explorar fácilmente los monumentos históricos y puntos de interés cercanos, incluidos el Alcázar de Colón y las Atarazanas Reales, ambos parte de la Ciudad Colonial de Santo Domingo, declarada Patrimonio de la Humanidad por la UNESCO."
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesita saber antes de visitar la Plaza de la Hispanidad or Spain",
+    "items": [
+      {
+        "name": "¿Dónde se encuentra la Plaza de la Hispanidad or Spain?",
+        "text": "La Plaza de la Hispanidad or Spain se encuentra en la C. La Atarazana 2, en la Zona Colonial de Santo Domingo, Distrito Nacional, República Dominicana (código postal 10212)."
+      },
+      {
+        "name": "¿Es gratuita la visita a la Plaza de la Hispanidad?",
+        "text": "Sí. La Plaza de la Hispanidad or Spain es una plaza pública al aire libre y su visita es gratuita durante todo el año, las 24 horas del día."
+      },
+      {
+        "name": "¿Por qué es conocida la Plaza de la Hispanidad?",
+        "text": "La plaza es el corazón de la Ciudad Colonial de Santo Domingo, Patrimonio de la Humanidad por la UNESCO. Frente a ella se encuentran el histórico Alcázar de Colón y los arcos de las Atarazanas, que combinan la historia colonial del siglo XVI con terrazas, gastronomía y eventos culturales."
+      },
+      {
+        "name": "¿Cuál es el mejor momento para visitar la Plaza de la Hispanidad?",
+        "text": "El atardecer y la noche, alrededor de las 5:00 PM, son los mejores momentos: la luz dorada baña las fachadas coloniales y la plaza se llena de restaurantes con terraza, música en vivo y vida nocturna."
+      },
+      {
+        "name": "¿Qué otras atracciones hay cerca de la Plaza de la Hispanidad?",
+        "text": "A pocos pasos de la plaza se encuentran el Alcázar de Colón, los arcos de las Atarazanas Reales, la Catedral Primada de América, el Parque Colón y el paseo del río Ozama, todo dentro de la peatonal Zona Colonial de Santo Domingo."
+      },
+      {
+        "name": "¿La Plaza de la Hispanidad es accesible y admite mascotas?",
+        "text": "Sí. La plaza es plana, abierta y accesible para sillas de ruedas, y se permiten mascotas por tratarse de un espacio público abierto."
+      }
+    ]
+  },
+  "sources": {
+    "title": "Fuentes y Referencias Oficiales",
+    "description": "La información de esta página se ha recopilado de fuentes públicas oficiales para que pueda planificar una visita precisa y segura.",
+    "officialTitle": "Fuentes Oficiales",
+    "note": "Los horarios de apertura, las tarifas y los servicios pueden cambiar. Antes de su visita, confirme la información más reciente con las instituciones oficiales indicadas anteriormente. Todas las fotografías mostradas en este sitio web son solo de referencia; los derechos de imagen y copyright pertenecen a sus fotógrafos originales."
+  },
+  "weather": {
+    "title": "Tiempo en Santo Domingo",
+    "subtitle": "La plaza se encuentra en el centro de Santo Domingo, de clima tropical, cálido todo el año y con aguaceros frecuentes. Mire los datos antes de salir para decidir si necesita paraguas.",
+    "today": "Hoy",
+    "feelsLike": "Sensación",
+    "humidity": "Humedad",
+    "wind": "Viento",
+    "windUnit": "km/h",
+    "forecastTitle": "Previsión de los próximos 7 días",
+    "conditions": {
+      "clear": "Despejado",
+      "partly": "Parcialmente nuboso",
+      "overcast": "Nublado",
+      "fog": "Niebla",
+      "drizzle": "Llovizna",
+      "rain": "Lluvia",
+      "showers": "Chubascos",
+      "snow": "Nieve",
+      "storm": "Tormenta"
+    },
+    "foot": "Nota: la sensación térmica y la probabilidad de lluvia son orientativas; compruebe siempre las condiciones reales antes de salir.",
+    "unavailable": "Cargando los datos del tiempo… se actualizarán automáticamente en un momento."
+  },
+  "facilities": {
+    "title": "Servicios Útiles para el Visitante",
+    "subtitle": "Información neutral por tipo de servicio para ayudarle a planificar la visita. Este es un sitio divulgativo sin ánimo de lucro: no recomendamos negocios concretos, y las condiciones dependen siempre de lo que encuentre in situ.",
+    "note": "La ubicación, los horarios y las tarifas de los servicios pueden variar. Consulte la señalización local y la información actualizada del mapa. El contenido anterior es una referencia neutral y no constituye una recomendación de ningún comercio ni marca.",
+    "items": [
+      {
+        "name": "Baños (WC)",
+        "text": "En la plaza y en las principales zonas públicas de la Ciudad Colonial hay baños públicos, algunos vigilados o con una pequeña tarifa. Los baños de restaurantes y cafeterías suelen estar reservados a sus clientes, por lo que conviene localizar las instalaciones públicas antes de la visita."
+      },
+      {
+        "name": "Estacionamiento",
+        "text": "El casco antiguo es una zona peatonal con calles estrechas. En los accesos y alrededores de la Zona Colonial hay varios estacionamientos públicos de pago; lo mejor es aparcar allí y llegar a la plaza caminando, en taxi o en transporte urbano."
+      },
+      {
+        "name": "Opciones de Restauración",
+        "text": "Alrededor de la plaza y en las callejuelas de la Ciudad Colonial abundan terrazas, cafeterías, heladerías y puestos de comida local con cocina caribeña, mariscos, parrilladas latinas y platos españoles para todos los presupuestos. No señalamos a ningún local concreto."
+      },
+      {
+        "name": "Opciones de Alojamiento",
+        "text": "En la Ciudad Colonial y a lo largo de la antigua muralla se encuentran hoteles boutique, hostales tradicionales y alojamientos vacacionales, muchos en edificios coloniales restaurados con patio. Para mayor comodidad, considere alojarse a poca distancia a pie de la plaza."
+      },
+      {
+        "name": "Tiendas y Servicios",
+        "text": "En las calles cercanas hay colmados, supermercados, farmacias, cajeros automáticos y casas de cambio para cubrir necesidades diarias como agua potable o un paraguas de repuesto. Algunos pequeños comercios acortan su horario los domingos y festivos."
+      },
+      {
+        "name": "Combustible y Carga Eléctrica",
+        "text": "Las gasolineras son numerosas en Santo Domingo y la mayoría ofrece gasolina y diésel; los puntos públicos de recarga eléctrica se concentran en grandes centros comerciales y avenidas principales. Llene el tanque o cargue el vehículo antes de entrar al casco antiguo."
+      }
+    ]
+  },
+  "story": {
+    "title": "Historia, Relatos y Leyendas",
+    "lead": "Detrás de una calle empedrada, de un palacio de piedra de coral y de una hilera de arcos hay recuerdos del primer siglo del Nuevo Mundo. Los relatos siguientes siguen las crónicas tempranas de América y la investigación pública disponible, contados en lenguaje sencillo.",
+    "sections": [
+      {
+        "heading": "De Guacanagaríx a la primera ciudad de América",
+        "body": "En diciembre de 1492 la flota de Colón encalló frente a la costa de la isla La Española, en tierras del cacique taíno Guacanagaríx. Con la madera del barco averiado, la tripulación levantó uno de los primeros asentamientos europeos de América, La Navidad, que encontraron destruido al regresar. En 1502 el gobernador Nicolás de Ovando trasladó la colonia a la orilla oeste del río Ozama y fundó oficialmente Santo Domingo, la primera ciudad europea permanente del Nuevo Mundo. Su trazado de calles, murallas, iglesias y plazas cimentó el urbanismo de todo el continente."
+      },
+      {
+        "heading": "Diego Colón y el palacio más antiguo de América",
+        "body": "En 1509 Diego Colón, hijo de Cristóbal Colón, llegó a Santo Domingo como gobernador junto a su esposa María de Toledo, sobrina del rey Fernando de España. Diego mandó construir sobre la colina que domina el río Ozama una residencia para su corte: hoy la conocemos como Alcázar de Colón, el palacio virreinal más antiguo que se conserva en América, frente a la plaza por su lado este. Para huir del sol caribeño, María y las damas de la corte paseaban por la muralla contemplando el mar; su camino se llamó Calle de las Damas, la primera calle empedrada documentada de América."
+      },
+      {
+        "heading": "Las Atarazanas Reales: almacén del Nuevo Mundo",
+        "body": "Los arcos de piedra del lado oeste de la plaza pertenecen a las Atarazanas Reales, construidas hacia 1509 y consideradas por los estudiosos uno de los conjuntos de aduana y almacenes reales más antiguos que se conservan en América. El oro, las perlas y los cargamentos valiosos de la conquista se inspeccionaban y guardaban aquí, mientras las flotas mercantes se pertrechaban en la ribera. En 1586 el corsario inglés Francis Drake tomó Santo Domingo, exigió un enorme rescate y quemó parte de la ciudad, dando origen a leyendas de tesoros escondidos entre cenizas. Hoy las terrazas y la música en vivo ocupan los arcos, pero sus muros aún hablan del gran centro comercial del Nuevo Mundo."
+      },
+      {
+        "heading": "De las ruinas a un referente cultural vivo",
+        "body": "Desde el siglo XIX el distrito colonial decayó y muchos edificios quedaron en ruinas. Un programa de restauración de mediados del siglo XX devolvió la vida a la plaza y a su entorno y protegió todo el conjunto como patrimonio. En 1990 la Ciudad Colonial de Santo Domingo fue inscrita en la Lista del Patrimonio Mundial de la UNESCO, convirtiendo esta plaza en una de las aulas al aire libre más significativas sobre la era colonial de América."
+      }
+    ],
+    "factsTitle": "¿Sabías que...?",
+    "facts": [
+      "A Santo Domingo se la llama la Primera Ciudad de América: alberga la primera catedral, el primer hospital, la primera universidad y la primera calle empedrada del Nuevo Mundo.",
+      "El Alcázar de Colón se construyó con piedra coralina local y muros muy gruesos, capaces de resistir las temporadas de huracanes del Caribe.",
+      "La plaza también se llama Plaza de España porque mira al corazón del antiguo asentamiento español.",
+      "Por las noches la plaza acoge música latina en vivo, y vecinos y viajeros comparten sus escalones de piedra bajo el cielo abierto.",
+      "El río Ozama es el río madre de Santo Domingo; la Fortaleza Ozama, en su desembocadura, es la fortaleza militar europea más antigua que se conserva en América."
+    ]
   }
 }

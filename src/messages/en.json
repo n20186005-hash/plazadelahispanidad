@@ -1,7 +1,8 @@
 {
   "meta": {
-    "title": "Plaza de la Hispanidad or Spain | Spain Square",
-    "description": "Explore Plaza de la Hispanidad in Santo Domingo, Dominican Republic. A core area of the World Heritage site and a top destination for outdoor dining."
+    "title": "Plaza de la Hispanidad or Spain (Santo Domingo) - Visitor Guide & Location",
+    "ogTitle": "Plaza de la Hispanidad or Spain - Santo Domingo Travel Guide",
+    "description": "Discover Plaza de la Hispanidad or Spain, the iconic landmark in Santo Domingo, Distrito Nacional, Dominican Republic. View location map, opening details, nearby Alcázar de Colón, and travel tips."
   },
   "header": {
     "home": "Home",
@@ -11,15 +12,16 @@
     "backToHome": "Back to Home"
   },
   "hero": {
-    "title": "Plaza de la Hispanidad",
+    "title": "Plaza de la Hispanidad or Spain (Santo Domingo)",
     "subtitle": "Dominican Republic · Core Historical Landmark of Santo Domingo's Colonial Zone",
     "rating": "4.7",
-    "reviewCount": "13,710",
+    "reviewCount": "13,819",
     "hours": "Historical Public Plaza",
     "openMaps": "View Location"
   },
   "intro": {
     "title": "Explore the Oldest Historical Square in the Americas",
+    "welcome": "Welcome to Plaza de la Hispanidad or Spain, widely recognized as the central Plaza de la Hispanidad of Santo Domingo. Located in the heart of Santo Domingo, Distrito Nacional, Dominican Republic, this historic square serves as the primary hub for travelers visiting the region.",
     "description": "Plaza de la Hispanidad (also known as Plaza de España) is located in the Zona Colonial, the historical core of Santo Domingo, Dominican Republic. As an important part of the oldest surviving European settlement in the Americas, the square is adjacent to the Ozama River. It not only carries the profound history of the Age of Discovery but is now also the most vibrant cultural hub and public leisure space in Santo Domingo.",
     "visitGuide": {
       "title": "Amenities & Accessibility",
@@ -220,7 +222,9 @@
   "mapSection": {
     "title": "Location & Map",
     "subtitle": "C. La Atarazana 2, Santo Domingo 10212, Dominican Republic",
-    "openMaps": "View on Google Maps"
+    "openMaps": "View on Google Maps",
+    "officialPortal": "For official updates and regional tourism information, visit the",
+    "officialPortalLinkLabel": "Ministry of Tourism of the Dominican Republic (mitur.gob.do)"
   },
   "footer": {
     "rights": "© 2026 Plaza de la Hispanidad or Spain. All rights reserved.",
@@ -250,7 +254,8 @@
         "url": "https://www.godominicanrepublic.com/"
       }
     },
-    "disclaimer": "This website is an independent third-party travel information project. We have no affiliation with local government or other official institutions."
+    "disclaimer": "This website is an independent third-party travel information project. We have no affiliation with local government or other official institutions.",
+    "imageCredit": "Image credit: all photos displayed on this website are for reference only; all image rights and copyrights belong to their original photographers."
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -374,5 +379,129 @@
     ],
     "guideTitle": "Visitor Guide Tip",
     "guideContent": "Strolling from the ancient cobblestone roads of the 16th century to the outdoor restaurants of today, Plaza de la Hispanidad perfectly blends the weight of history with modern vitality. It is recommended that you arrive at dusk to personally experience this dialogue across five centuries of time and space."
+  },
+  "nearby": {
+    "title": "Landmarks & Attractions Around Plaza de la Hispanidad",
+    "description": "When visiting Plaza de la Hispanidad or Spain, visitors can easily explore surrounding historical landmarks and points of interest, including Alcázar de Colón and Las Atarazanas Reales, both part of Santo Domingo's UNESCO-listed Colonial City."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before visiting Plaza de la Hispanidad or Spain",
+    "items": [
+      {
+        "name": "Where is Plaza de la Hispanidad or Spain located?",
+        "text": "Plaza de la Hispanidad or Spain is located at C. La Atarazana 2 in the Zona Colonial of Santo Domingo, Distrito Nacional, Dominican Republic (postal code 10212)."
+      },
+      {
+        "name": "Is Plaza de la Hispanidad free to visit?",
+        "text": "Yes, Plaza de la Hispanidad or Spain is a public open-air square and is free to visit all year round, 24 hours a day."
+      },
+      {
+        "name": "What is Plaza de la Hispanidad known for?",
+        "text": "The square is the heart of the Colonial City of Santo Domingo, a UNESCO World Heritage Site. It faces the historic Alcázar de Colón and the arcades of Las Atarazanas, blending 16th-century colonial history with vibrant outdoor dining and cultural events."
+      },
+      {
+        "name": "When is the best time to visit Plaza de la Hispanidad?",
+        "text": "Late afternoon and evening, around 5:00 PM, is the best time to visit: the golden light falls on the colonial facades, and the square fills with terrace restaurants, live music and nightlife as darkness falls."
+      },
+      {
+        "name": "What other attractions are near Plaza de la Hispanidad?",
+        "text": "The square is a short walk from Alcázar de Colón, the Atarazanas Reales arcades, the Catedral Primada de América, Parque Colón and the Ozama River esplanade, all inside Santo Domingo's pedestrian-friendly Zona Colonial."
+      },
+      {
+        "name": "Is Plaza de la Hispanidad accessible and pet friendly?",
+        "text": "Yes. The square is flat, open and wheelchair accessible, and pets are allowed because it is a public open space."
+      }
+    ]
+  },
+  "sources": {
+    "title": "Sources & Official References",
+    "description": "The information on this page is compiled from official public sources so you can plan an accurate and safe visit.",
+    "officialTitle": "Official Sources",
+    "note": "Opening hours, admission details and services may change. Please confirm the latest information with the official institutions listed above before your visit. All photos shown on this website are for reference only, and all image rights and copyrights belong to their original photographers."
+  },
+  "weather": {
+    "title": "Current Weather in Santo Domingo",
+    "subtitle": "The plaza sits in central Santo Domingo, a warm, tropical city with frequent showers year-round. Check the figures below before heading out to decide whether you need an umbrella.",
+    "today": "Today",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "windUnit": "km/h",
+    "forecastTitle": "7-Day Forecast",
+    "conditions": {
+      "clear": "Clear",
+      "partly": "Partly cloudy",
+      "overcast": "Overcast",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "showers": "Showers",
+      "snow": "Snow",
+      "storm": "Thunderstorm"
+    },
+    "foot": "Note: feels-like temperature and rain probability are indicative; always check the actual conditions before you go out.",
+    "unavailable": "Weather data is loading… it will refresh automatically in a moment."
+  },
+  "facilities": {
+    "title": "Visitor Facilities & Local Services",
+    "subtitle": "Neutral, type-only information to help you plan your visit. This is a nonprofit educational website: we do not recommend any specific business, and conditions always depend on what you find on site.",
+    "note": "Facility locations, opening hours, and fees may change at any time. Please rely on on-site signage and the latest map information. The content above is a neutral reference only and does not endorse any particular business or brand.",
+    "items": [
+      {
+        "name": "Restrooms (WC)",
+        "text": "Public restrooms are available in the square and the main public areas of the Colonial City; some are attended or require a small fee. Restrooms inside restaurants and cafés are usually reserved for customers, so it helps to locate public facilities before your visit."
+      },
+      {
+        "name": "Parking",
+        "text": "The old town is a pedestrian-first district with narrow streets. Several paid public parking lots are located at the main entrances and around the Zona Colonial; it is best to park there and walk, take a taxi, or use city transit to reach the square."
+      },
+      {
+        "name": "Dining Options",
+        "text": "Open-air terraces, cafés, dessert shops, and local food stalls line the square and the alleys of the Colonial City, offering Caribbean flavors, seafood, Latin grills, and Spanish-style dishes at every budget. We do not point to any specific business."
+      },
+      {
+        "name": "Lodging Options",
+        "text": "The Colonial City and the old city wall host boutique hotels, traditional guesthouses, and vacation rentals, many set in restored colonial courtyard buildings. For a quieter and more convenient stay, consider options within walking distance of the square."
+      },
+      {
+        "name": "Shops & Services",
+        "text": "Convenience stores, supermarkets, pharmacies, bank ATMs, and currency exchange points in nearby streets cover daily needs such as drinking water or a spare umbrella. Some small shops keep shorter hours on Sundays and holidays."
+      },
+      {
+        "name": "Fuel & EV Charging",
+        "text": "Gas stations are common across Santo Domingo, most offering petrol and diesel, while public EV charging points concentrate in large shopping malls and along main avenues. Refuel or recharge before entering the old town to avoid maneuvering in narrow lanes."
+      }
+    ]
+  },
+  "story": {
+    "title": "History, Stories & Legends",
+    "lead": "Behind a cobblestone lane, a coral-stone palace, and a row of arched arcades lie the memories of the first century of the New World. The accounts below follow early American chronicles and publicly available research, retold in plain language.",
+    "sections": [
+      {
+        "heading": "From Guacanagaríx to the First City of the Americas",
+        "body": "In December 1492 Columbus's fleet ran aground off the coast of the island of Hispaniola, in the lands of a Taíno chief named Guacanagaríx. Using timber from the wrecked ship, the crew built one of the earliest European outposts in the Americas - La Navidad - only to find it destroyed upon their return. In 1502 Governor Nicolás de Ovando moved the settlement to the western bank of the Ozama River and formally founded Santo Domingo, the first permanent European city in the New World. Its grid of streets, walls, churches, and plazas laid the foundation of urban civilization across the continent."
+      },
+      {
+        "heading": "Diego Colón and the Oldest Palace of the Americas",
+        "body": "In 1509 Diego Colón, son of Christopher Columbus, arrived in Santo Domingo as governor together with his wife María de Toledo, a niece of King Ferdinand of Spain. Diego ordered a residence to be built on the high ground overlooking the Ozama River for his court; today we know this building as the Alcázar de Colón, the oldest surviving viceregal palace in the Americas, facing the square on its eastern side. To escape the Caribbean sun, María and the ladies of the court used to stroll along the city wall to watch the sea, and their path became known as Calle de las Damas - the first paved street recorded in the Americas."
+      },
+      {
+        "heading": "Las Atarazanas Reales: Warehouse of the New World",
+        "body": "The arched stone arcades on the western side of the square belong to the Atarazanas Reales (Royal Shipyards), built around 1509 and regarded by scholars as one of the oldest surviving customs and royal warehouse complexes in the Americas. Gold, pearls, and precious cargo from the early Spanish conquest were inspected and stored here, while merchant fleets were fitted and supplied on the waterfront below. In 1586 the English privateer Sir Francis Drake seized Santo Domingo, demanded a huge ransom, and set parts of the city ablaze - giving rise to local tales of hidden treasure and ashes. Today, terraces and live music fill the arcades, yet the stone walls still tell of the commercial hub of the New World."
+      },
+      {
+        "heading": "From Ruins to a Living Cultural Landmark",
+        "body": "From the 19th century onward the colonial district slowly declined and many buildings fell into ruin. A mid-20th-century restoration program revived the square and its surroundings and placed the entire district under heritage protection. In 1990 the Colonial City of Santo Domingo was inscribed on the UNESCO World Heritage List, turning this square into one of the most significant open-air classrooms on the colonial era of the Americas."
+      }
+    ],
+    "factsTitle": "Did You Know?",
+    "facts": [
+      "Santo Domingo is often called the First City of the Americas, home to the New World's first cathedral, first hospital, first university, and first paved street.",
+      "The Alcázar de Colón was built from local coral stone with remarkably thick walls, strong enough to weather Caribbean hurricane seasons.",
+      "The square is also known as Plaza de España because it faces the heart of the old Spanish settlement.",
+      "In the evenings, the square hosts live Latin music as visitors and locals share the same stone steps under the open sky.",
+      "The Ozama River is Santo Domingo's mother river; the Fortaleza Ozama at its mouth is the oldest surviving European military fortress in the Americas."
+    ]
   }
 }

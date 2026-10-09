@@ -3,6 +3,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { SITE, SITE_HERO_IMAGE_URL } from '@/lib/site';
+import { buildAlternates, OG_LOCALE, type Locale } from '@/lib/seo';
 import PWARegister from '@/components/PWARegister';
 import type { Metadata } from 'next';
 
@@ -13,13 +14,7 @@ export function generateStaticParams() {
 const langMap: Record<string, string> = {
   zh: 'zh-CN',
   en: 'en',
-  es: 'es',
-};
-
-const ogLocaleMap: Record<string, string> = {
-  zh: 'zh_CN',
-  en: 'en_US',
-  es: 'es_ES',
+  es: 'es-DO',
 };
 
 export async function generateMetadata({
@@ -29,42 +24,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const messages = (await import(`@/messages/${locale}.json`)).default as any;
-  const baseUrl = SITE.baseUrl;
 
-  const zhUrl = `${baseUrl}/zh`;
-  const enUrl = `${baseUrl}/en`;
-  const esUrl = `${baseUrl}/es`;
-
-  let selfUrl = zhUrl;
-  if (locale === 'en') selfUrl = enUrl;
-  else if (locale === 'es') selfUrl = esUrl;
+  const alternates = buildAlternates(locale as Locale, '');
 
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(SITE.baseUrl),
     title: messages.meta.title,
     description: messages.meta.description,
-    alternates: {
-      canonical: selfUrl,
-      languages: {
-        zh: zhUrl,
-        en: enUrl,
-        es: esUrl,
-        'x-default': zhUrl,
-      } as Record<string, string>,
-    },
+    alternates,
     openGraph: {
       title: messages.meta.ogTitle || messages.meta.title,
       description: messages.meta.description,
-      url: selfUrl,
-      siteName: SITE.fullName,
-      locale: ogLocaleMap[locale] || 'zh_CN',
+      url: alternates.canonical,
+      siteName: SITE.shortName,
+      locale: OG_LOCALE[locale as Locale] || 'es_DO',
       type: 'website',
       images: [
         {
           url: SITE_HERO_IMAGE_URL,
           width: 1200,
           height: 630,
-          alt: `${SITE.fullName} in ${SITE.city}, ${SITE.country}`,
+          alt: `${SITE.shortName} — ${SITE.city}, ${SITE.country}`,
         },
       ],
     },
@@ -113,19 +93,35 @@ export default async function LocaleLayout({
   // ---- 结构化数据：TouristAttraction（含 @id / image / geo / address）----
   const touristAttractionLD = {
     '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
+    '@type': ['TouristAttraction', 'Place'],
     '@id': `${SITE.baseUrl}/#attraction`,
-    name: SITE.fullName,
+    name: 'Plaza de España',
     alternateName: [
-      SITE.shortName,
+      'Plaza de la Hispanidad',
       SITE.spanishFullName,
-      `${SITE.city} ${SITE.fullName}`,
+      SITE.fullName,
+      'Plaza de España Santo Domingo',
+      'Plaza de la Hispanidad Santo Domingo',
     ],
-    description: messages?.meta?.description || `Comprehensive visitor guide to ${SITE.fullName} in ${SITE.city}, ${SITE.region}, ${SITE.country}.`,
+    description:
+      messages?.meta?.description ||
+      `Visitor guide to Plaza de España (Plaza de la Hispanidad) in the Colonial Zone of ${SITE.city}, ${SITE.country}.`,
     url: SITE.baseUrl,
     image: [SITE_HERO_IMAGE_URL],
     isAccessibleForFree: true,
     publicAccess: true,
+    touristType: ['History and heritage', 'Architecture', 'City walks', 'Food and nightlife'],
+    availableLanguage: ['es', 'en', 'zh'],
+    containedInPlace: {
+      '@type': 'TouristDestination',
+      name: `Zona Colonial de ${SITE.city}`,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: SITE.city,
+        addressRegion: SITE.region,
+        addressCountry: SITE.countryCode,
+      },
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: SITE.streetAddress,
@@ -147,26 +143,11 @@ export default async function LocaleLayout({
     ],
   };
 
-  // ---- 结构化数据：FAQPage（与页面正文 FAQ 一致）----
-  const faqItems = (messages?.faq?.items || []) as Array<{ name: string; text: string }>;
-  const faqLD = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((item) => ({
-      '@type': 'Question',
-      name: item.name,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.text,
-      },
-    })),
-  };
-
   const themeColor = '#ffffff';
   const darkThemeColor = '#0c1a14';
 
   return (
-    <html lang={langMap[locale] || 'zh-CN'} suppressHydrationWarning>
+    <html lang={langMap[locale] || 'es-DO'} suppressHydrationWarning>
       <head>
         {/* Google Analytics 4 - G-HXM22WWPKP */}
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`} />
@@ -182,21 +163,13 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(touristAttractionLD) }}
         />
 
-        {/* Structured data: FAQPage */}
-        {faqItems.length > 0 && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLD) }}
-          />
-        )}
-
         {/* PWA / Mobile */}
         <meta name="theme-color" content={themeColor} media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content={darkThemeColor} media="(prefers-color-scheme: dark)" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content={SITE.fullName} />
+        <meta name="apple-mobile-web-app-title" content={SITE.shortName} />
         <link rel="manifest" href="/manifest.webmanifest" />
 
         {/* Theme init (avoid FOUC) */}

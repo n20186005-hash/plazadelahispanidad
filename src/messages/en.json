@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Plaza de la Hispanidad or Spain (Santo Domingo) - Visitor Guide & Location",
-    "ogTitle": "Plaza de la Hispanidad or Spain - Santo Domingo Travel Guide",
-    "description": "Discover Plaza de la Hispanidad or Spain, the iconic landmark in Santo Domingo, Distrito Nacional, Dominican Republic. View location map, opening details, nearby Alcázar de Colón, and travel tips."
+    "title": "Plaza de España Santo Domingo | Plaza de la Hispanidad Visitor Guide",
+    "ogTitle": "Plaza de España (Plaza de la Hispanidad) · Colonial Zone of Santo Domingo",
+    "description": "Visit Plaza de España, also called Plaza de la Hispanidad, in the Colonial Zone of Santo Domingo, Dominican Republic: history, location, what to see nearby, photos and visiting tips."
   },
   "header": {
     "home": "Home",
@@ -12,11 +12,11 @@
     "backToHome": "Back to Home"
   },
   "hero": {
-    "title": "Plaza de la Hispanidad or Spain (Santo Domingo)",
-    "subtitle": "Dominican Republic · Core Historical Landmark of Santo Domingo's Colonial Zone",
+    "title": "Plaza de España (Plaza de la Hispanidad) in Santo Domingo",
+    "subtitle": "Colonial Zone · Santo Domingo, Dominican Republic · UNESCO World Heritage",
     "rating": "4.7",
-    "reviewCount": "13,819",
-    "hours": "Historical Public Plaza",
+    "reviewCount": "13,850",
+    "hours": "Public square, free access",
     "openMaps": "View Location"
   },
   "intro": {
@@ -90,7 +90,7 @@
     "addressValue": "C. La Atarazana 2, Santo Domingo 10212, Dominican Republic",
     "plusCode": "Plus Code",
     "plusCodeValue": "F4G8+RP Santo Domingo, Dominican Republic",
-    "phone": "Official Phone",
+    "phone": "Phone (public listing)",
     "phoneValue": "+1 809-687-4750"
   },
   "hours": {
@@ -165,59 +165,14 @@
     "showAllPhotos": "Show All Photos"
   },
   "reviews": {
-    "title": "Visitor Reviews",
-    "declaration": "Review information can be viewed via Google Maps (external link).",
-    "moreReviews": "View More Reviews on Google Maps",
-    "items": [
-      {
-        "name": "Carlos Rivera",
-        "date": "2 months ago",
-        "rating": 5,
-        "text": "A place full of historical and cultural atmosphere. The square's environment is unforgettable, highly recommended for all tourists who love history and culture."
-      },
-      {
-        "name": "María González",
-        "date": "3 weeks ago",
-        "rating": 5,
-        "text": "Amazing urban park. The environment is very beautiful. This is an important part of Santo Domingo's public cultural space."
-      },
-      {
-        "name": "Juan Pérez",
-        "date": "1 month ago",
-        "rating": 4,
-        "text": "Very interesting place to learn about Dominican history and culture. Daytime visits recommended when the light is best."
-      },
-      {
-        "name": "Ana Torres",
-        "date": "Over 6 months ago",
-        "rating": 5,
-        "text": "An important part of Santo Domingo's history and culture. The scenery of the square is moving, a must-visit place in Santo Domingo."
-      },
-      {
-        "name": "Roberto Silva",
-        "date": "2 years ago",
-        "rating": 4,
-        "text": "Great urban park experience. The history and culture are wonderful, and there are many urban landscapes nearby."
-      },
-      {
-        "name": "Sofía Méndez",
-        "date": "Over 6 months ago",
-        "rating": 5,
-        "text": "Beautiful square, full of the charm of Dominican culture. The scenery is unforgettable, definitely worth a visit."
-      },
-      {
-        "name": "Miguel Herrera",
-        "date": "3 months ago",
-        "rating": 4,
-        "text": "Interesting urban venue. Experience culture up close, recommend protecting the environment."
-      },
-      {
-        "name": "Laura Vargas",
-        "date": "1 month ago",
-        "rating": 5,
-        "text": "Cultural gem of Santo Domingo. This square is an important place to understand Dominican culture, definitely worth experiencing."
-      }
-    ]
+    "title": "Visitor rating",
+    "declaration": "This is an independent guide and we do not collect our own reviews. The rating below comes from the public Google Maps listing and is shown for reference only.",
+    "ratingValue": "4.7",
+    "reviewCount": "13,850",
+    "outOf": "out of 5",
+    "snapshot": "Average Google Maps rating: 4.7 out of 5 · 13,850 reviews",
+    "sourceNote": "Checked in October 2026 on the public Google Maps listing. It may change over time.",
+    "moreReviews": "Read the reviews on Google Maps"
   },
   "mapSection": {
     "title": "Location & Map",
@@ -252,10 +207,30 @@
       "godominicanrepublic": {
         "name": "Dominican Republic Tourism Promotion",
         "url": "https://www.godominicanrepublic.com/"
+      },
+      "unesco": {
+        "name": "UNESCO World Heritage · Colonial City of Santo Domingo",
+        "url": "https://whc.unesco.org/en/list/526/"
       }
     },
     "disclaimer": "This website is an independent third-party travel information project. We have no affiliation with local government or other official institutions.",
     "imageCredit": "Image credit: all photos displayed on this website are for reference only; all image rights and copyrights belong to their original photographers."
+  },
+  "topics": {
+    "faqTitle": "Frequently asked questions",
+    "relatedTitle": "Keep exploring",
+    "updatedNote": "Content reviewed in October 2026.",
+    "galleryTitle": "Photo gallery",
+    "nav": {
+      "historia": "History",
+      "como-llegar": "How to get here",
+      "que-ver-cerca": "What to see nearby",
+      "fotos": "Photos"
+    }
+  },
+  "topicLinks": {
+    "title": "Plaza de España guides",
+    "subtitle": "Go deeper with these pages on the Colonial Zone of Santo Domingo"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -411,6 +386,18 @@
       {
         "name": "Is Plaza de la Hispanidad accessible and pet friendly?",
         "text": "Yes. The square is flat, open and wheelchair accessible, and pets are allowed because it is a public open space."
+      },
+      {
+        "name": "Are Plaza de España and Plaza de la Hispanidad the same square?",
+        "text": "Yes. In Santo Domingo both names refer to the same public space in front of the Alcázar de Colón, in the Colonial Zone. Official Dominican tourism sources and the public listing of the place use both names."
+      },
+      {
+        "name": "Where exactly is the square inside the Colonial Zone?",
+        "text": "At Calle La Atarazana 2, between the Alcázar de Colón (to the east) and the arches of Las Atarazanas Reales (to the west), a few minutes' walk from the Catedral Primada de América and Parque Colón."
+      },
+      {
+        "name": "How much time do I need to visit it?",
+        "text": "Between 30 minutes and an hour to walk the square and its immediate surroundings. If you add the interior of the Alcázar de Colón or the Museo de las Casas Reales, allow half a day."
       }
     ]
   },

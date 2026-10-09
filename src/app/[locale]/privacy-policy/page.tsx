@@ -1,5 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations, useLocale, useMessages } from 'next-intl';
+import { buildAlternates, type Locale } from '@/lib/seo';
 import type { Metadata } from 'next';
 
 export async function generateMetadata({
@@ -8,22 +9,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = 'https://plazadelahispanidad.com';
-  const zhUrl = `${baseUrl}/zh/privacy-policy`;
-  const enUrl = `${baseUrl}/en/privacy-policy`;
-  const esUrl = `${baseUrl}/es/privacy-policy`;
-  const selfUrl = locale === 'zh' ? zhUrl : locale === 'en' ? enUrl : esUrl;
+  const messages = (await import(`@/messages/${locale}.json`)).default as any;
 
   return {
-    alternates: {
-      canonical: selfUrl,
-      languages: {
-        'zh': zhUrl,
-        'en': enUrl,
-        'es': esUrl,
-        'x-default': zhUrl,
-      },
-    },
+    title: `${messages.privacy.title} · ${messages.meta.title}`,
+    description: messages.meta.description,
+    alternates: buildAlternates(locale as Locale, '/privacy-policy'),
+    robots: { index: false, follow: true },
   };
 }
 

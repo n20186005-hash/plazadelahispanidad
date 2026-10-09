@@ -3,29 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState, useCallback } from 'react';
 import { SITE } from '@/lib/site';
-
-const photoFiles = [
-  'plaza-de-la-hispanidad-or-spain (1).jpg',
-  'plaza-de-la-hispanidad-or-spain (2).jpg',
-  'plaza-de-la-hispanidad-or-spain (4).jpg',
-  'plaza-de-la-hispanidad-or-spain (5).jpg',
-  'plaza-de-la-hispanidad-or-spain (6).jpg',
-  'plaza-de-la-hispanidad-or-spain (7).jpg',
-  'plaza-de-la-hispanidad-or-spain (8).jpg',
-  'plaza-de-la-hispanidad-or-spain (10).jpg',
-  'plaza-de-la-hispanidad-or-spain (11).jpg',
-  'plaza-de-la-hispanidad-or-spain (12).jpg',
-  'plaza-de-la-hispanidad-or-spain (13).jpg',
-  'plaza-de-la-hispanidad-or-spain (15).jpg',
-  'plaza-de-la-hispanidad-or-spain (16).jpg',
-  'plaza-de-la-hispanidad-or-spain (18).jpg',
-  'plaza-de-la-hispanidad-or-spain (22).jpg',
-  'plaza-de-la-hispanidad-or-spain (24).jpg',
-  'plaza-de-la-hispanidad-or-spain (25).jpg',
-  'plaza-de-la-hispanidad-or-spain (28).jpg',
-  'plaza-de-la-hispanidad-or-spain (30).jpg',
-  'plaza-de-la-hispanidad-or-spain (31).jpg',
-];
+import { GALLERY_FILES } from '@/lib/gallery';
 
 export default function Gallery() {
   const t = useTranslations('gallery');
@@ -33,13 +11,13 @@ export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  const photos = photoFiles.map((file, i) => {
-    const caption = captions?.[i] || `${SITE.fullName} ${i + 1}`;
+  const photos = GALLERY_FILES.map((file, i) => {
+    const caption = captions?.[i] || `${SITE.shortName} ${i + 1}`;
     return {
-      src: `/gallery/${file}`,
+      src: encodeURI(`/gallery/${file}`),
       caption,
       // 图片 alt 语义绑定实体名称与城市
-      alt: `${caption} - ${SITE.shortName}, ${SITE.city}`,
+      alt: `${caption} — ${SITE.shortName}, ${SITE.city}, ${SITE.country}`,
     };
   });
 

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "西班牙广场 Plaza de la Hispanidad or Spain（圣多明戈）- 访客指南与位置",
-    "ogTitle": "西班牙广场 Plaza de la Hispanidad or Spain - 圣多明戈旅行指南",
-    "description": "探索位于多米尼加共和国圣多明戈国家特区的标志性景点 Plaza de la Hispanidad or Spain（西班牙广场）。查看地图位置、开放信息、周边哥伦布宫 Alcázar de Colón 与旅行建议。"
+    "title": "西班牙广场 Plaza de España（圣多明戈）｜Plaza de la Hispanidad 历史与游览指南",
+    "ogTitle": "西班牙广场 Plaza de España（Plaza de la Hispanidad）· 圣多明戈殖民区",
+    "description": "西班牙广场（Plaza de España，又称 Plaza de la Hispanidad）位于多米尼加共和国圣多明戈殖民区：历史由来、地理位置、周边景点、实拍照片与游览建议。"
   },
   "header": {
     "home": "首页",
@@ -12,11 +12,11 @@
     "backToHome": "返回首页"
   },
   "hero": {
-    "title": "Plaza de la Hispanidad (西班牙广场 · 圣多明戈)",
-    "subtitle": "多米尼加共和国 · 圣多明戈殖民区核心历史地标",
+    "title": "西班牙广场 Plaza de España（Plaza de la Hispanidad）· 圣多明戈",
+    "subtitle": "殖民区 Zona Colonial · 多米尼加共和国圣多明戈 · 联合国教科文组织世界遗产",
     "rating": "4.7",
-    "reviewCount": "13,819",
-    "hours": "历史公共空间 / 城市广场",
+    "reviewCount": "13,850",
+    "hours": "免费开放的城市广场",
     "openMaps": "查看位置"
   },
   "intro": {
@@ -90,7 +90,7 @@
     "addressValue": "C. La Atarazana 2, Santo Domingo 10212多米尼加共和国",
     "plusCode": "Plus 代码",
     "plusCodeValue": "F4G8+RP 圣多明戈 多米尼加共和国",
-    "phone": "联系电话",
+    "phone": "电话（公开资料）",
     "phoneValue": "+18096874750"
   },
   "hours": {
@@ -165,59 +165,14 @@
     "showAllPhotos": "显示全部照片"
   },
   "reviews": {
-    "title": "游客评价",
-    "declaration": "评价信息可透过 Google Maps 查看（外部链接）。",
-    "moreReviews": "在 Google Maps 查看更多评价",
-    "items": [
-      {
-        "name": "Carlos Rivera",
-        "date": "2个月前",
-        "rating": 5,
-        "text": "一个充满历史文化气息的城市公园。广场的环境非常漂亮，强烈推荐给所有喜欢历史文化的游客。"
-      },
-      {
-        "name": "María González",
-        "date": "3周前",
-        "rating": 5,
-        "text": "令人惊叹的城市公园。环境非常优美，这里是圣多明戈重要的公共文化空间。"
-      },
-      {
-        "name": "Juan Pérez",
-        "date": "1个月前",
-        "rating": 4,
-        "text": "非常有趣的地方，可以了解多米尼加的历史文化。建议白天前往，那时候光线最好。"
-      },
-      {
-        "name": "Ana Torres",
-        "date": "半年多前",
-        "rating": 5,
-        "text": "圣多明戈历史文化的重要组成部分。广场的景色令人感动，这里是当地必去的地方。"
-      },
-      {
-        "name": "Roberto Silva",
-        "date": "2年前",
-        "rating": 4,
-        "text": "很好的城市公园体验。历史文化非常精彩，周边还有很多城市景观。"
-      },
-      {
-        "name": "Sofía Méndez",
-        "date": "半年多前",
-        "rating": 5,
-        "text": "美丽的广场，充满了多米尼加文化的魅力。景色令人难忘，一定要来体验。"
-      },
-      {
-        "name": "Miguel Herrera",
-        "date": "3个月前",
-        "rating": 4,
-        "text": "有趣的城市公园。可以近距离感受当地文化，建议保护环境。"
-      },
-      {
-        "name": "Laura Vargas",
-        "date": "1个月前",
-        "rating": 5,
-        "text": "圣多明戈的文化瑰宝。这个广场是了解多米尼加文化的重要场所，一定要来体验。"
-      }
-    ]
+    "title": "游客评分",
+    "declaration": "本站为独立旅游信息站，不自行收集评价。以下评分来自 Google Maps 公开资料，仅供参考。",
+    "ratingValue": "4.7",
+    "reviewCount": "13,850",
+    "outOf": "满分 5 分",
+    "snapshot": "Google Maps 平均评分：4.7 / 5 · 13,850 条评价",
+    "sourceNote": "资料查询时间为 2026 年 10 月，取自 Google Maps 公开页面，数值可能随时间变动。",
+    "moreReviews": "前往 Google Maps 查看评价"
   },
   "mapSection": {
     "title": "地图位置",
@@ -252,10 +207,30 @@
       "godominicanrepublic": {
         "name": "多米尼加国家旅游部推介",
         "url": "https://www.godominicanrepublic.com/"
+      },
+      "unesco": {
+        "name": "联合国教科文组织世界遗产 · 圣多明戈殖民城",
+        "url": "https://whc.unesco.org/en/list/526/"
       }
     },
     "disclaimer": "本网站是一个独立的第三方旅游资讯项目。我们与当地政府或其他官方机构没有任何关联。",
     "imageCredit": "图片版权声明：本网站所展示的所有图片仅作参考，图片产权及版权均归原摄影者所有。"
+  },
+  "topics": {
+    "faqTitle": "常见问题",
+    "relatedTitle": "继续探索",
+    "updatedNote": "内容更新于 2026 年 10 月。",
+    "galleryTitle": "照片图库",
+    "nav": {
+      "historia": "历史由来",
+      "como-llegar": "交通指南",
+      "que-ver-cerca": "周边景点",
+      "fotos": "实拍照片"
+    }
+  },
+  "topicLinks": {
+    "title": "西班牙广场专题指南",
+    "subtitle": "深入了解圣多明戈殖民区的这些页面"
   },
   "privacy": {
     "title": "隐私政策",
@@ -411,6 +386,18 @@
       {
         "name": "Plaza de la Hispanidad 是否无障碍且允许宠物进入？",
         "text": "是的。广场地势平坦开阔，对轮椅使用者十分友好；作为开放式公共空间，也允许宠物进入。"
+      },
+      {
+        "name": "西班牙广场和 Plaza de la Hispanidad 是同一个广场吗？",
+        "text": "是的。在圣多明戈，这两个名称指的是殖民区哥伦布宫前的同一个公共空间。多米尼加官方旅游资料与该地点的公开资料两种说法并用。"
+      },
+      {
+        "name": "广场在殖民区里的确切位置是哪里？",
+        "text": "位于 C. La Atarazana 2，东侧是哥伦布宫、西侧是皇家船坞（Las Atarazanas Reales）拱廊，距离美洲第一大教堂与哥伦布公园仅几分钟脚程。"
+      },
+      {
+        "name": "参观需要多长时间？",
+        "text": "走完广场及周边约需 30 分钟到 1 小时。若要进入哥伦布宫或皇家宅邸博物馆，建议预留半天。"
       }
     ]
   },

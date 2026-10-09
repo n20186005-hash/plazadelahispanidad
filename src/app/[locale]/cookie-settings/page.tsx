@@ -1,4 +1,5 @@
 import { setRequestLocale } from 'next-intl/server';
+import { buildAlternates, type Locale } from '@/lib/seo';
 import type { Metadata } from 'next';
 import CookieSettingsClient from './CookieSettingsClient';
 
@@ -8,22 +9,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = 'https://plazadelahispanidad.com';
-  const zhUrl = `${baseUrl}/zh/cookie-settings`;
-  const enUrl = `${baseUrl}/en/cookie-settings`;
-  const esUrl = `${baseUrl}/es/cookie-settings`;
-  const selfUrl = locale === 'zh' ? zhUrl : locale === 'en' ? enUrl : esUrl;
+  const messages = (await import(`@/messages/${locale}.json`)).default as any;
 
   return {
-    alternates: {
-      canonical: selfUrl,
-      languages: {
-        'zh': zhUrl,
-        'en': enUrl,
-        'es': esUrl,
-        'x-default': zhUrl,
-      },
-    },
+    title: `${messages.cookieSettings.title} · ${messages.meta.title}`,
+    description: messages.meta.description,
+    alternates: buildAlternates(locale as Locale, '/cookie-settings'),
+    robots: { index: false, follow: true },
   };
 }
 

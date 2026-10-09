@@ -4,11 +4,15 @@ import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import LanguageToggle from './LanguageToggle';
 import ThemeToggle from './ThemeToggle';
+import { TOPICS, TOPIC_KEYS } from '@/content/topics';
+import type { Locale } from '@/lib/seo';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
   const t = useTranslations('header');
-  const locale = useLocale();
+  const tNav = useTranslations('topics');
+  const locale = useLocale() as Locale;
+  const navLabels = tNav.raw('nav') as Record<string, string>;
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -42,6 +46,20 @@ export default function Header() {
               style={{ color: scrolled ? 'var(--text-secondary)' : 'rgba(255,255,255,0.85)' }}
             >
               {t(section)}
+            </a>
+          ))}
+          <span
+            className="w-px h-4"
+            style={{ background: scrolled ? 'var(--border-color)' : 'rgba(255,255,255,0.35)' }}
+          />
+          {TOPIC_KEYS.map((key) => (
+            <a
+              key={key}
+              href={`/${locale}/${TOPICS[key].slug[locale]}`}
+              className="text-sm font-medium transition-colors"
+              style={{ color: scrolled ? 'var(--text-secondary)' : 'rgba(255,255,255,0.85)' }}
+            >
+              {navLabels?.[key] ?? key}
             </a>
           ))}
         </nav>

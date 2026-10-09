@@ -1,12 +1,16 @@
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { SITE } from '@/lib/site';
+import { TOPICS, TOPIC_KEYS } from '@/content/topics';
+import type { Locale } from '@/lib/seo';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const tB = useTranslations('basicInfo');
-  const locale = useLocale();
+  const tNav = useTranslations('topics');
+  const locale = useLocale() as Locale;
   const prefix = `/${locale}`;
+  const navLabels = tNav.raw('nav') as Record<string, string>;
 
   const officialLinksObj = t.raw('officialLinks') as Record<string, { name: string; url: string }>;
   const officialLinks = Object.values(officialLinksObj);
@@ -52,6 +56,16 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-wrap gap-4 text-sm mt-4 sm:mt-0">
+            {TOPIC_KEYS.map((key) => (
+              <a
+                key={key}
+                href={`${prefix}/${TOPICS[key].slug[locale]}`}
+                style={{ color: 'var(--text-secondary)' }}
+                className="hover:underline"
+              >
+                {navLabels?.[key] ?? key}
+              </a>
+            ))}
             <a href={`${prefix}/privacy-policy`} style={{ color: 'var(--text-secondary)' }} className="hover:underline">
               {t('privacy')}
             </a>

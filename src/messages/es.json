@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Plaza de España o de la Hispanidad (Santo Domingo) - Guía del Visitante y Ubicación",
-    "ogTitle": "Plaza de España o de la Hispanidad - Guía de Viaje de Santo Domingo",
-    "description": "Descubre la Plaza de España o de la Hispanidad, el hito emblemático de Santo Domingo, Distrito Nacional, República Dominicana. Consulta el mapa de ubicación, horarios, el cercano Alcázar de Colón y consejos de viaje."
+    "title": "Plaza de España Santo Domingo | Plaza de la Hispanidad: Historia y Guía",
+    "ogTitle": "Plaza de España (Plaza de la Hispanidad) · Zona Colonial de Santo Domingo",
+    "description": "Descubre la Plaza de España o Plaza de la Hispanidad, en la Zona Colonial de Santo Domingo, República Dominicana: historia, ubicación, qué ver cerca, fotos y consejos de visita."
   },
   "header": {
     "home": "Inicio",
@@ -12,11 +12,11 @@
     "backToHome": "Volver al Inicio"
   },
   "hero": {
-    "title": "Plaza de España o de la Hispanidad (Santo Domingo)",
-    "subtitle": "República Dominicana · Hito Histórico Central de la Zona Colonial de Santo Domingo",
+    "title": "Plaza de España (Plaza de la Hispanidad) en Santo Domingo",
+    "subtitle": "Zona Colonial · Santo Domingo, República Dominicana · Patrimonio Mundial de la UNESCO",
     "rating": "4.7",
-    "reviewCount": "13,819",
-    "hours": "Plaza Pública Histórica",
+    "reviewCount": "13,850",
+    "hours": "Plaza pública de acceso libre",
     "openMaps": "Ver Ubicación"
   },
   "intro": {
@@ -90,7 +90,7 @@
     "addressValue": "C. La Atarazana 2, Santo Domingo 10212, República Dominicana",
     "plusCode": "Código Plus",
     "plusCodeValue": "F4G8+RP Santo Domingo, República Dominicana",
-    "phone": "Teléfono Oficial",
+    "phone": "Teléfono (ficha pública)",
     "phoneValue": "+1 809-687-4750"
   },
   "hours": {
@@ -165,59 +165,14 @@
     "showAllPhotos": "Mostrar Todas las Fotos"
   },
   "reviews": {
-    "title": "Reseñas de Visitantes",
-    "declaration": "La información de las reseñas se puede ver a través de Google Maps (enlace externo).",
-    "moreReviews": "Ver Más Reseñas en Google Maps",
-    "items": [
-      {
-        "name": "Carlos Rivera",
-        "date": "hace 2 meses",
-        "rating": 5,
-        "text": "Un lugar lleno de atmósfera histórica y cultural. El ambiente de la plaza es inolvidable, muy recomendable para todos los turistas que aman la historia y la cultura."
-      },
-      {
-        "name": "María González",
-        "date": "hace 3 semanas",
-        "rating": 5,
-        "text": "Parque urbano asombroso. El ambiente es muy hermoso. Esta es una parte importante del espacio cultural público de Santo Domingo."
-      },
-      {
-        "name": "Juan Pérez",
-        "date": "hace 1 mes",
-        "rating": 4,
-        "text": "Lugar muy interesante para conocer la historia y cultura dominicana. Se recomiendan las visitas diurnas cuando la luz es mejor."
-      },
-      {
-        "name": "Ana Torres",
-        "date": "hace más de 6 meses",
-        "rating": 5,
-        "text": "Una parte importante de la historia y cultura de Santo Domingo. El paisaje de la plaza es conmovedor, un lugar imprescindible en Santo Domingo."
-      },
-      {
-        "name": "Roberto Silva",
-        "date": "hace 2 años",
-        "rating": 4,
-        "text": "Excelente experiencia de parque urbano. La historia y la cultura son maravillosas, y hay muchos paisajes urbanos cercanos."
-      },
-      {
-        "name": "Sofía Méndez",
-        "date": "hace más de 6 meses",
-        "rating": 5,
-        "text": "Hermosa plaza, llena del encanto de la cultura dominicana. El paisaje es inolvidable, definitivamente vale la pena visitarlo."
-      },
-      {
-        "name": "Miguel Herrera",
-        "date": "hace 3 meses",
-        "rating": 4,
-        "text": "Lugar urbano interesante. Experimento la cultura de cerca, recomiendo proteger el medio ambiente."
-      },
-      {
-        "name": "Laura Vargas",
-        "date": "hace 1 mes",
-        "rating": 5,
-        "text": "Gema cultural de Santo Domingo. Esta plaza es un lugar importante para comprender la cultura dominicana, definitivamente vale la pena experimentarlo."
-      }
-    ]
+    "title": "Valoración de los visitantes",
+    "declaration": "Este sitio es una guía independiente y no recopila opiniones propias. La valoración siguiente procede de la ficha pública de Google Maps y se muestra solo como referencia.",
+    "ratingValue": "4.7",
+    "reviewCount": "13,850",
+    "outOf": "sobre 5",
+    "snapshot": "Valoración media en Google Maps: 4,7 sobre 5 · 13.850 opiniones",
+    "sourceNote": "Dato consultado en octubre de 2026 en la ficha pública de Google Maps. Puede variar con el tiempo.",
+    "moreReviews": "Ver las opiniones en Google Maps"
   },
   "mapSection": {
     "title": "Ubicación y Mapa",
@@ -252,10 +207,30 @@
       "godominicanrepublic": {
         "name": "Promoción Turística de República Dominicana",
         "url": "https://www.godominicanrepublic.com/"
+      },
+      "unesco": {
+        "name": "UNESCO · Ciudad Colonial de Santo Domingo (Patrimonio Mundial)",
+        "url": "https://whc.unesco.org/en/list/526/"
       }
     },
     "disclaimer": "Este sitio web es un proyecto independiente de información turística de terceros. No tenemos afiliación con el gobierno local u otras instituciones oficiales.",
     "imageCredit": "Crédito de las imágenes: todas las fotografías mostradas en este sitio web son solo de referencia; todos los derechos de imagen y copyright pertenecen a sus fotógrafos originales."
+  },
+  "topics": {
+    "faqTitle": "Preguntas frecuentes",
+    "relatedTitle": "Seguir explorando",
+    "updatedNote": "Contenido revisado en octubre de 2026.",
+    "galleryTitle": "Galería de fotos",
+    "nav": {
+      "historia": "Historia",
+      "como-llegar": "Cómo llegar",
+      "que-ver-cerca": "Qué ver cerca",
+      "fotos": "Fotos"
+    }
+  },
+  "topicLinks": {
+    "title": "Guías de la Plaza de España",
+    "subtitle": "Amplía la visita con estas páginas de la Zona Colonial de Santo Domingo"
   },
   "privacy": {
     "title": "Política de Privacidad",
@@ -411,6 +386,18 @@
       {
         "name": "¿La Plaza de la Hispanidad es accesible y admite mascotas?",
         "text": "Sí. La plaza es plana, abierta y accesible para sillas de ruedas, y se permiten mascotas por tratarse de un espacio público abierto."
+      },
+      {
+        "name": "¿La Plaza de España y la Plaza de la Hispanidad son la misma plaza?",
+        "text": "Sí. En Santo Domingo los dos nombres designan el mismo espacio público frente al Alcázar de Colón, en la Zona Colonial. Las fuentes turísticas oficiales dominicanas y la ficha pública del lugar emplean ambas denominaciones."
+      },
+      {
+        "name": "¿Dónde está exactamente la plaza dentro de la Zona Colonial?",
+        "text": "En la calle La Atarazana 2, entre el Alcázar de Colón (al este) y los arcos de Las Atarazanas Reales (al oeste), a pocos minutos a pie de la Catedral Primada de América y del Parque Colón."
+      },
+      {
+        "name": "¿Cuánto tiempo se necesita para visitarla?",
+        "text": "Entre 30 minutos y una hora para recorrer la plaza y su entorno inmediato. Si añade el interior del Alcázar de Colón o el Museo de las Casas Reales, cuente con media jornada."
       }
     ]
   },
